@@ -1,0 +1,124 @@
+/* Reset */
+* {
+    font-family: "Josefin Sans", sans-serif;
+    box-sizing: border-box;
+}
+
+/******************** HEADER ********************/
+header {
+    display: grid;
+    grid-template-columns: 24px 1fr 44px;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding: 5px  0 5px 10px;
+    column-gap: 8px;
+}
+
+header img {
+    width: 24px;
+    height: auto;
+}
+
+header span {
+    font-size: 1.2rem;
+    color: #3D405B;
+}
+
+/******************** HAMBURGER ********************/
+.hamburger {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+.hamburger::after {
+    content: "\2630";
+    /* ☰ */
+    color: #3D405B;
+}
+
+/* Change to X when .show class is added */
+.hamburger.show::after {
+    content: "\00d7";
+    /* × */
+    color: #3D405B;
+}
+
+/******************** NAVIGATION ********************/
+.navigation {
+    display: none;
+}
+
+/* Show nav when .show class is active */
+.navigation.show {
+    display: block;
+}
+
+.navigation ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navigation li {
+    border-top: 1px solid #ddd;
+}
+
+.navigation li a {
+    display: block;
+    padding: .8rem 10px;
+    text-decoration: none;
+    color: #3D405B;
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #ddd;
+}
+
+.navigation li.current a {
+    background-color: #e0e0e0;
+    
+}
+.navigation li {
+    background-color: #eee;
+}
+
+.navigation a:hover {
+    background-color: #E07A5F;
+}
+
+h1 {
+    margin-left: 10px;
+    color: #3D405B;
+
+}
+
+footer {
+    background-color: #eee;
+    text-align: center;
+    padding: 1rem,10px;
+    
+}
+.social {
+    display: flex;
+    justify-content: center;
+    column-gap: 8px;
+}
+
+.social a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border: 1px solid #ccc;
+    border-radius: 22px;
+}
+
+.social img {
+    width: 22px;
+    height: 22px;
+}
+
+.social a:hover {
+    background-color: #ddd;
+}

@@ -1,0 +1,51 @@
+/******************** NAVIGATION STYLES ********************/
+.navigation {
+    display: none;
+    /* hide by default on small screens */
+}
+
+.navigation.show {
+    display: block;
+    /* show when hamburger is clicked */
+}
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Make the nav horizontal ONLY on larger screens */
+@media only screen and (min-width: 38rem) {
+
+    header,
+    main,
+    nav,
+    footer {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    header {
+        grid-template-columns: 24px auto;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    /* Show nav on larger screens */
+    .navigation {
+        display: block;
+        border-bottom: 1px solid #eee;
+    }
+
+    .navigation ul {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .navigation a{
+        border: none;
+    }
+}
