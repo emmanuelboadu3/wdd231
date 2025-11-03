@@ -65,18 +65,21 @@ header span {
 
 .hamburger::after {
     content: "\2630";
-    color: #2F2F2F;
+    color: #002244;
+    font-size: 2.1rem;
 }
 
 .hamburger.show::after {
     content: "\00d7";
-    color: #2F2F2F;
+    color: #002244;
+    font-size: 2.8rem;
+
 }
 
 .navigation {
     display: none;
     background-color: #002244;
-    /* darker navy for better contrast */
+
 }
 
 .navigation.show {

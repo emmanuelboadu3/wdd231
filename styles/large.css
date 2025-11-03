@@ -21,7 +21,7 @@
 
     .about-section {
         display: grid;
-        padding: 1rem;
+        padding: 0;
         grid-template-columns: 2fr 1fr;
         gap: 3rem;
         align-items: stretch;
