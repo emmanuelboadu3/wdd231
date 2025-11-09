@@ -1,0 +1,70 @@
+/* General Page Styles */
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header and Footer */
+header,
+footer {
+    text-align: center;
+    background-color: #003366;
+    color: white;
+    padding: 1rem;
+    font-weight: 600;
+}
+
+footer {
+    font-size: 0.9rem;
+}
+
+/* Main Layout */
+main {
+    padding: 1rem;
+}
+
+/* Card Container (CSS Grid) */
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+/* Individual Prophet Card */
+section {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+    padding: 1.5rem;
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Hover Effect */
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Text Styles */
+h2 {
+    color: #003366;
+    margin-bottom: 0.5rem;
+}
+
+p {
+    margin: 0.25rem 0;
+    font-size: 0.95rem;
+}
+
+/* Prophet Portrait */
+section img {
+    margin-top: 1rem;
+    width: 100%;
+    border-radius: 8px;
+    height: auto;
+}

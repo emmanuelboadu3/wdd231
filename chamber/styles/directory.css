@@ -1,0 +1,125 @@
+/* =============== DIRECTORY PAGE STYLES =============== */
+
+/* View Toggle */
+#directory-view-toggle {
+    text-align: center;
+    background-color: #333;
+    padding: 1rem;
+}
+
+#directory-view-toggle button {
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 0.5rem 1.5rem;
+    margin: 0 0.25rem;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+#directory-view-toggle button:hover {
+    background-color: #eee;
+    transform: scale(1.03);
+}
+
+/* ----------- GRID VIEW ----------- */
+#members.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    margin: 1rem;
+    align-items: stretch;
+}
+
+.member-card {
+    background-color: #e6e6e6;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    text-align: center;
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    min-height: 260px;
+    /* Prevent CLS jumps */
+}
+
+.member-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.member-card img {
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 4px;
+    display: block;
+    margin: 0 auto 0.5rem;
+}
+
+.member-card h3 {
+    font-weight: 700;
+    margin: 0.5rem 0 0.25rem;
+    color: #111;
+}
+
+.member-card p {
+    margin: 0.25rem 0;
+    color: #333;
+    font-size: 0.9rem;
+}
+
+.member-card a {
+    color: #004aad;
+    text-decoration: underline;
+}
+
+/* ----------- LIST VIEW ----------- */
+#members.list {
+    display: block;
+    margin: 1rem;
+}
+
+#members.list .member-card {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    align-items: center;
+    background-color: #e6e6e6;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0;
+    text-align: left;
+    min-height: auto;
+}
+
+#members.list .member-card:nth-child(even) {
+    background-color: #d4d4d4;
+}
+
+#members.list .member-card img {
+    display: none;
+}
+
+#members.list .member-card h3 {
+    margin: 0;
+    font-weight: 700;
+}
+
+#members.list .member-card p {
+    margin: 0;
+}
+
+#members.list .member-card a {
+    color: #004aad;
+    text-decoration: underline;
+}
+
+/* ----------- RESPONSIVE ----------- */
+@media (max-width: 600px) {
+    #members.list .member-card {
+        grid-template-columns: 1fr;
+        text-align: center;
+        padding: 1rem;
+    }
+}

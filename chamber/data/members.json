@@ -1,0 +1,65 @@
+[
+    {
+        "name": "Kumasi Tech Solutions",
+        "address": "12 Adum Street, Kumasi",
+        "phone": "+233 20 111 1111",
+        "website": "https://kumasitech.com",
+        "image": "kumasi-tech.webp",
+        "membership": 3,
+        "description": "Innovative tech solutions for local businesses."
+    },
+    {
+        "name": "Golden Cafe",
+        "address": "45 Asokwa Road, Kumasi",
+        "phone": "+233 20 222 2222",
+        "website": "https://goldencafe.com",
+        "image": "golden-cafe.webp",
+        "membership": 2,
+        "description": "Cozy café serving the best local and international coffee."
+    },
+    {
+        "name": "Royal Builders Ltd",
+        "address": "23 Bantama Avenue, Kumasi",
+        "phone": "+233 20 333 3333",
+        "website": "https://royalbuilders.com",
+        "image": "royal-builders.webp",
+        "membership": 1,
+        "description": "Construction and civil engineering services."
+    },
+    {
+        "name": "Kumasi Bookstore",
+        "address": "78 Patase Street, Kumasi",
+        "phone": "+233 20 444 4444",
+        "website": "https://kumasibooks.com",
+        "image": "kumasi-bookstore.webp",
+        "membership": 2,
+        "description": "Books, stationery, and educational resources."
+    },
+    {
+        "name": "Sunshine Pharmacy",
+        "address": "9 Ahodwo Road, Kumasi",
+        "phone": "+233 20 555 5555",
+        "website": "https://sunshinepharmacy.com",
+        "image": "sunshine-pharmacy.webp",
+        "membership": 3,
+        "description": "Health and wellness products, prescriptions filled daily."
+    },
+    {
+        "name": "Green Market Groceries",
+        "address": "33 Kejetia Market, Kumasi",
+        "phone": "+233 20 666 6666",
+        "website": "https://greenmarketgh.com",
+        "image": "green-market.webp",
+        "membership": 1,
+        "description": "Fresh produce and daily essentials."
+    },
+    {
+        "name": "Harmony Fitness Center",
+        "address": "56 Oforikrom Street, Kumasi",
+        "phone": "+233 20 777 7777",
+        "website": "https://harmonyfitness.com",
+        "image": "harmony-fitness.webp",
+        "membership": 2,
+        "description": "Gym and wellness center promoting healthy living."
+    }
+]
