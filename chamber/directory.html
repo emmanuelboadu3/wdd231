@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,47 +11,38 @@
 
     <title>Directory | Kumasi Chamber of Commerce</title>
 
-    <!--  Favicon -->
+    <!-- Favicon -->
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link rel="preload" href="styles/directory.css" as="style" onload="this.rel='stylesheet'">
-    <noscript>
-        <link rel="stylesheet" href="styles/directory.css">
-    </noscript>
-    
 
-
-
-
-
-
-    <!--  Open Graph / Social Sharing -->
+    <!-- Open Graph / Social Sharing -->
     <meta property="og:title" content="Kumasi Chamber of Commerce Directory">
     <meta property="og:description"
         content="Find and connect with local businesses in Kumasi through our chamber directory.">
-    <meta property="og:image" content="https://yourwebsite.com/chamber/images/og-image.jpg">
-    <meta property="og:url" content="https://yourwebsite.com/chamber/directory.html">
+    <!-- If image is local, put in same directory as HTML -->
+    <meta property="og:image" content="images/og-image.webp">
+    <meta property="og:url" content="https://emmanuelboadu3.github.io/wdd231/chamber/directory.html">
     <meta property="og:type" content="website">
 
-    <!--  Optimize Google Fonts loading -->
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- only load when actually used -->
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
 
-    <!--  CSS order & optimization -->
+    <!-- CSS order & optimization -->
     <link rel="stylesheet" href="styles/normalize.css" media="all">
     <link rel="stylesheet" href="styles/small.css" media="all">
     <link rel="stylesheet" href="styles/large.css" media="(min-width: 700px)">
     <link rel="stylesheet" href="styles/directory.css" media="all">
 
-    <!--  Preload hero/logo image for faster LCP -->
+    <!-- Preload hero/logo image -->
     <link rel="preload" as="image" href="images/logo.svg" type="image/svg+xml">
 
-
-    <!--  JavaScript: defer everything -->
-    <script src="scripts/directory.js" defer></script>
+    <!-- JavaScript -->
     <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/directory.js" defer></script>
 </head>
+
 
 <body>
     <header>
