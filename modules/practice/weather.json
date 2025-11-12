@@ -1,0 +1,12 @@
+{
+    "name": "Rexburg",
+    "weather": [
+        {
+            "description": "clear sky",
+            "icon": "01d"
+        }
+    ],
+    "main": {
+        "temp": 72.5
+    }
+}
