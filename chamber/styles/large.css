@@ -1,83 +1,6 @@
 /* =============== LARGE SCREEN STYLES =============== */
 
-@media (min-width: 900px) {
-    footer {
-        min-height: 150px;
-    }
-
-    .info-boxes {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 2rem;
-        margin-top: 2rem;
-    }
-
-    .weather-icon {
-        width: 60px;
-        height: 60px;
-        margin-left: 1rem;
-    }
-
-    .box {
-        background-color: #fff;
-        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-        text-align: left;
-        min-height: 220px;
-    }
-
-    /* Hero section side-by-side text and image */
-    .hero {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        text-align: left;
-        gap: 2rem;
-    }
-
-    .hero img {
-        flex: 1;
-        max-height: 400px;
-        object-fit: cover;
-    }
-
-    .hero-text {
-        flex: 1;
-    }
-
-    /* Spotlights in 3-column grid */
-    #spotlight-container {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 1.5rem;
-        margin-top: 2rem;
-    }
-
-    .spotlight-card {
-        text-align: left;
-    }
-
-    .spotlight-card img {
-        width: 100%;
-        height: auto;
-        margin-bottom: 1rem;
-    }
-}
-
-/* Larger breakpoint for nav refinement */
-@media (min-width: 768px) {
-    nav {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-        width: auto;
-    }
-
-    nav a {
-        padding: 0.5rem 1rem;
-    }
-}
-
-/* General layout for header, nav, main, footer, etc. */
+/* ---- GENERAL LAYOUT ---- */
 header {
     display: flex;
     justify-content: space-between;
@@ -147,4 +70,81 @@ footer .developer-info {
     width: 100%;
     height: auto;
     display: block;
+}
+
+/* ---- NAV BREAKPOINT ---- */
+@media (min-width: 768px) {
+    nav {
+        flex-direction: row;
+        justify-content: flex-end;
+        width: auto;
+    }
+
+    nav a {
+        padding: 0.5rem 1rem;
+    }
+}
+
+/* ---- LARGE SCREEN STYLES ---- */
+@media (min-width: 900px) {
+    footer {
+        min-height: 150px;
+    }
+
+    .info-boxes {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+        margin-top: 2rem;
+    }
+
+    .weather-icon {
+        width: 60px;
+        height: 60px;
+        margin-left: 1rem;
+    }
+
+    .box {
+        background-color: #fff;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        text-align: left;
+        min-height: 220px;
+    }
+
+    /* Hero section side-by-side text and image */
+    .hero {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        text-align: left;
+        gap: 2rem;
+    }
+
+    .hero img {
+        flex: 1;
+        max-height: 400px;
+        object-fit: cover;
+    }
+
+    .hero-text {
+        flex: 1;
+    }
+
+    /* Spotlights in 3-column grid */
+    #spotlight-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+        margin-top: 2rem;
+    }
+
+    .spotlight-card {
+        text-align: left;
+    }
+
+    .spotlight-card img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 1rem;
+    }
 }
