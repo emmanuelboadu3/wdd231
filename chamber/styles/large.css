@@ -3,122 +3,27 @@
 @media (min-width: 900px) {
     footer {
         min-height: 150px;
+    }
 
-} 
     .info-boxes {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        /* 3 equal columns */
         gap: 2rem;
         margin-top: 2rem;
     }
 
- .weather-icon {
-             width: 60px;
-             height: 60px;
-             margin-left: 1rem;
-         }
+    .weather-icon {
+        width: 60px;
+        height: 60px;
+        margin-left: 1rem;
+    }
 
     .box {
         background-color: #fff;
         box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
         text-align: left;
-        /* better readability on desktop */
         min-height: 220px;
     }
-}
-
-    header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 1rem 2rem;
-    }
-
-    #menu-btn {
-        display: none;
-        /* hide mobile menu button */
-    }
-
-    nav {
-        display: flex !important;
-        gap: 2rem;
-        background: none;
-    }
-
-    nav a {
-        font-weight: 600;
-        border: none;
-        text-decoration: none;
-    }
-
-    nav a:hover {
-        text-decoration: underline;
-    }
-
-    main {
-        padding: 2rem 3rem;
-    }
-
-    .grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 1.5rem;
-    }
-
-    .list {
-        display: block;
-    }
-
-
-
-    .list .member-card {
-        margin-bottom: 1.5rem;
-        border-bottom: 1px solid #ccc;
-        padding-bottom: 1rem;
-    }
-
-    footer {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        padding: 2rem 3rem;
-        text-align: left;
-    }
-
-    footer .contact-info,
-    footer .developer-info {
-        flex: 1;
-    }
-
-    .logo {
-        width: 60px;
-        height: 60px;
-    }
-
-    .member-card img {
-        width: 100%;
-        height: auto;
-        display: block;
-    }
-
-
-/* Larger breakpoint for nav refinement */
-@media (min-width: 768px) {
-    nav {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-        width: auto;
-    }
-
-    nav a {
-        padding: 0.5rem 1rem;
-    }
-}
-
-/* ---- HOMEPAGE LAYOUT ---- */
-@media (min-width: 900px) {
 
     /* Hero section side-by-side text and image */
     .hero {
@@ -139,18 +44,6 @@
         flex: 1;
     }
 
-    /* Info boxes aligned horizontally */
-    .info-boxes {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 2rem;
-        margin-top: 2rem;
-    }
-
-    .box {
-        min-height: 220px;
-    }
-
     /* Spotlights in 3-column grid */
     #spotlight-container {
         display: grid;
@@ -168,4 +61,90 @@
         height: auto;
         margin-bottom: 1rem;
     }
+}
+
+/* Larger breakpoint for nav refinement */
+@media (min-width: 768px) {
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        width: auto;
+    }
+
+    nav a {
+        padding: 0.5rem 1rem;
+    }
+}
+
+/* General layout for header, nav, main, footer, etc. */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+#menu-btn {
+    display: none;
+}
+
+nav {
+    display: flex !important;
+    gap: 2rem;
+    background: none;
+}
+
+nav a {
+    font-weight: 600;
+    border: none;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 2rem 3rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.list {
+    display: block;
+}
+
+.list .member-card {
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 1rem;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 2rem 3rem;
+    text-align: left;
+}
+
+footer .contact-info,
+footer .developer-info {
+    flex: 1;
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+}
+
+.member-card img {
+    width: 100%;
+    height: auto;
+    display: block;
 }
