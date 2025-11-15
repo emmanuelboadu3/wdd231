@@ -14,14 +14,18 @@ header {
 
 nav {
     display: flex !important;
+    flex-direction: row;
+    justify-content: flex-end;
     gap: 2rem;
     background: none;
+    width: auto;
 }
 
 nav a {
     font-weight: 600;
     border: none;
     text-decoration: none;
+    padding: 0.5rem 1rem;
 }
 
 nav a:hover {
@@ -54,6 +58,7 @@ footer {
     align-items: flex-start;
     padding: 2rem 3rem;
     text-align: left;
+    min-height: 150px;
 }
 
 footer .contact-info,
@@ -72,25 +77,18 @@ footer .developer-info {
     display: block;
 }
 
-/* ---- NAV BREAKPOINT ---- */
+/* ---- MEDIA QUERIES ---- */
 @media (min-width: 768px) {
-    nav {
-        flex-direction: row;
-        justify-content: flex-end;
-        width: auto;
-    }
 
-    nav a {
-        padding: 0.5rem 1rem;
+    /* Optional: refine nav for tablets */
+    nav {
+        /* already flex-direction row in top-level, can add adjustments here if needed */
     }
 }
 
-/* ---- LARGE SCREEN STYLES ---- */
 @media (min-width: 900px) {
-    footer {
-        min-height: 150px;
-    }
 
+    /* Info Boxes */
     .info-boxes {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -98,17 +96,17 @@ footer .developer-info {
         margin-top: 2rem;
     }
 
-    .weather-icon {
-        width: 60px;
-        height: 60px;
-        margin-left: 1rem;
-    }
-
     .box {
         background-color: #fff;
         box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
         text-align: left;
         min-height: 220px;
+    }
+
+    .weather-icon {
+        width: 60px;
+        height: 60px;
+        margin-left: 1rem;
     }
 
     /* Hero section side-by-side text and image */
