@@ -80,10 +80,6 @@ footer .developer-info {
 /* ---- MEDIA QUERIES ---- */
 @media (min-width: 768px) {
 
-    /* Optional: refine nav for tablets */
-    nav {
-        /* already flex-direction row in top-level, can add adjustments here if needed */
-    }
 }
 
 @media (min-width: 900px) {

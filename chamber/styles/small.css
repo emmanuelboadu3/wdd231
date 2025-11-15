@@ -16,8 +16,8 @@ header {
     align-items: center;
     background-color: #004aad;
     color: white;
-    padding: 1rem;
     position: relative;
+    padding: 1rem; /* keep one padding definition */
 }
 
 header .logo {
@@ -52,9 +52,9 @@ header h1 {
 
 #menu-btn::after {
     content: "\2630";
-    color: white;
     font-size: 2.1rem;
     transition: transform 0.3s ease;
+    color: white;
 }
 
 #menu-btn.show::after {
@@ -72,6 +72,10 @@ nav {
     text-align: center;
 }
 
+nav.show {
+    display: flex;
+}
+
 nav a {
     color: white;
     text-decoration: none;
@@ -84,13 +88,9 @@ nav a.active {
     background-color: #00357d;
 }
 
-nav.show {
-    display: flex;
-}
-
 /* ---- MAIN ---- */
 main {
-    padding: 1rem;
+    padding: 1rem; /* single definition */
 }
 
 /* ---- VIEW TOGGLE BUTTONS (Directory) ---- */
@@ -147,7 +147,7 @@ footer {
     padding: 1.5rem 1rem;
     font-size: 0.9rem;
     margin-top: 2rem;
-    min-height: 120px;
+    min-height: 120px; /* keep one definition */
 }
 
 /* ---- HOMEPAGE STYLES ---- */
@@ -216,27 +216,21 @@ footer {
 }
 
 .box.weather {
-    background-color:#117c11;
+    background-color: #117c11;
     color: white;
     border: 1px solid darkgreen;
-    /* optional border */
 }
-/* Weather Forecast box styling */
+
 .box.forecast {
     background-color: #2E7C98;
-    /* deep teal-blue shade */
     color: #ffffff;
-    /* white text for good contrast */
     border-radius: 6px;
     padding: 1rem;
 }
 
-/* Upcoming Events box */
 .box.events {
     background-color: #b44d1a;
-    /* warm orange background */
     color: #ffffff;
-    /* white text for contrast */
     border-radius: 6px;
     padding: 1rem;
 }
@@ -277,18 +271,10 @@ footer {
 /* ---------- TITLE BARS FOR INFO BOXES ---------- */
 .info-boxes .box h2 {
     background-color: #333;
-    /* dark gray bar */
     color: white;
-    /* white text */
     padding: 0.8rem 1rem;
-    /* spacing inside bar */
     margin: -1rem -1rem 1rem -1rem;
-    /* makes bar stretch edge-to-edge */
     border-radius: 6px 6px 0 0;
     text-align: center;
     font-size: 1.2rem;
-}
-footer {
-    min-height: 120px;
-    /* adjust based on your design */
 }
