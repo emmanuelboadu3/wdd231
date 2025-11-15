@@ -1,5 +1,6 @@
-/* small.css */
-/* ---- GENERAL STYLES ---- */
+/* =============== SMALL SCREEN STYLES =============== */
+
+/* ---- GENERAL ---- */
 header,
 main,
 footer {
@@ -36,7 +37,7 @@ header h1 {
     font-size: 1.2rem;
 }
 
-/* ====== HAMBURGER BUTTON ====== */
+/* ---- HAMBURGER BUTTON ---- */
 #menu-btn {
     background: transparent;
     border: none;
@@ -92,7 +93,7 @@ main {
     padding: 1rem;
 }
 
-/* ---- VIEW TOGGLE BUTTONS ---- */
+/* ---- VIEW TOGGLE BUTTONS (Directory) ---- */
 .view-toggle {
     display: flex;
     justify-content: center;
@@ -128,7 +129,6 @@ main {
     padding: 1rem;
     text-align: center;
     min-height: 300px;
-    /* Prevent layout shift */
 }
 
 .directory img {
@@ -150,3 +150,145 @@ footer {
     min-height: 120px;
 }
 
+/* ---- HOMEPAGE STYLES ---- */
+
+/* Hero Section */
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #f5f5f5;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.hero img {
+    width: 100%;
+    max-height: 250px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+}
+
+.hero-text h2 {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+}
+
+.weather-icon {
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+    margin-left: 0.5rem;
+}
+
+.cta-button {
+    display: inline-block;
+    margin-top: 0.5rem;
+    padding: 0.6rem 1.2rem;
+    background-color: #004aad;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.cta-button:hover {
+    background-color: #00357d;
+}
+
+/* Info Boxes (Events, Weather, Forecast) */
+.info-boxes {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.box {
+    background-color: #e6e6e6;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 1rem;
+    text-align: center;
+}
+
+.box.weather {
+    background-color:#117c11;
+    color: white;
+    border: 1px solid darkgreen;
+    /* optional border */
+}
+/* Weather Forecast box styling */
+.box.forecast {
+    background-color: #2E7C98;
+    /* deep teal-blue shade */
+    color: #ffffff;
+    /* white text for good contrast */
+    border-radius: 6px;
+    padding: 1rem;
+}
+
+/* Upcoming Events box */
+.box.events {
+    background-color: #b44d1a;
+    /* warm orange background */
+    color: #ffffff;
+    /* white text for contrast */
+    border-radius: 6px;
+    padding: 1rem;
+}
+
+/* Spotlights Section */
+.spotlights {
+    margin: 2rem 0;
+}
+
+.spotlights h3 {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+#spotlight-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.spotlight-card {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 1rem;
+    text-align: center;
+}
+
+.spotlight-card img {
+    width: 100px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 0.5rem;
+}
+
+/* ---------- TITLE BARS FOR INFO BOXES ---------- */
+.info-boxes .box h2 {
+    background-color: #333;
+    /* dark gray bar */
+    color: white;
+    /* white text */
+    padding: 0.8rem 1rem;
+    /* spacing inside bar */
+    margin: -1rem -1rem 1rem -1rem;
+    /* makes bar stretch edge-to-edge */
+    border-radius: 6px 6px 0 0;
+    text-align: center;
+    font-size: 1.2rem;
+}
+footer {
+    min-height: 120px;
+    /* adjust based on your design */
+}

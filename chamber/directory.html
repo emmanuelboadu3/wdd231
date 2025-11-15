@@ -9,6 +9,7 @@
     <meta name="author" content="Emmanuel Boadu">
 
     <title>Kumasi Chamber of Commerce - Member Directory</title>
+    
 
     <!-- Favicon -->
     <link rel="icon" href="favicon.ico" type="image/x-icon">
@@ -23,19 +24,25 @@
     <meta property="og:type" content="website">
 
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preload"
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:wght@400;700&display=swap" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:wght@400;700&display=swap"
+            rel="stylesheet">
+    </noscript>
+    
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:wght@400;700&display=swap"
-        rel="stylesheet">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="styles/normalize.css">
+  
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/large.css" media="(min-width: 700px)">
     <link rel="stylesheet" href="styles/directory.css">
 
     <!-- JavaScript -->
     <script src="scripts/directory.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
 </head>
 
 <body>
@@ -46,8 +53,7 @@
             <h1>Kumasi Chamber of Commerce</h1>
         </div>
 
-        <!-- Mobile menu button -->
-        <button id="menu-btn" aria-label="Menu">☰</button>
+        <button id="menu-btn" aria-label="Menu"></button>
 
         <nav id="nav-menu">
             <a href="index.html">Home</a>

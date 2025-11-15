@@ -1,6 +1,6 @@
 /* =============== DIRECTORY PAGE STYLES =============== */
 
-/* View Toggle */
+/* ---- View Toggle ---- */
 #directory-view-toggle {
     text-align: center;
     background-color: #333;
@@ -23,7 +23,7 @@
     transform: scale(1.03);
 }
 
-/* ----------- GRID VIEW ----------- */
+/* ---- GRID VIEW ---- */
 #members.grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -75,7 +75,7 @@
     text-decoration: underline;
 }
 
-/* ----------- LIST VIEW ----------- */
+/* ---- LIST VIEW ---- */
 #members.list {
     display: block;
     margin: 1rem;
@@ -115,7 +115,7 @@
     text-decoration: underline;
 }
 
-/* ----------- RESPONSIVE ----------- */
+/* ---- RESPONSIVE ---- */
 @media (max-width: 600px) {
     #members.list .member-card {
         grid-template-columns: 1fr;
