@@ -11,7 +11,7 @@ header {
     align-items: center;
     background-color: #004aad;
     color: white;
-    position: relative;
+    
 }
 
 header .logo {
@@ -149,6 +149,29 @@ footer {
     font-size: 0.9rem;
     margin-top: 2rem;
     min-height: 120px;
+
+}
+
+/* Small screens */
+footer .social {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 1rem;
+}
+
+/* Icons themselves */
+.social img {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    cursor: pointer;
+}
+
+/* Hover effect */
+.social img:hover {
+    transform: scale(1.2);
+    opacity: 0.8;
 }
 
 /* ---- HOMEPAGE STYLES ---- */
@@ -278,4 +301,105 @@ footer {
     border-radius: 6px 6px 0 0;
     text-align: center;
     font-size: 1.2rem;
+}
+
+/* ---- MEMBERSHIP LEVELS (Mobile) ---- */
+.membership-cards {
+    display: flex;
+    flex-direction: column;
+    /* stack vertically */
+    gap: 1rem;
+    /* spacing between cards */
+    margin-top: 1.5rem;
+}
+
+.card {
+    background-color: #f0f0f0;
+    /* light gray background */
+    border-radius: 8px;
+    /* rounded corners */
+    padding: 1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    /* subtle shadow for button look */
+}
+
+.card h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    color: #3D405B;
+}
+
+.card a {
+    margin-top: 0.5rem;
+    display: inline-block;
+    padding: 0.4rem 0.8rem;
+    background-color: #004aad;
+    color: #fff;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.card a:hover {
+    background-color: #00357d;
+}
+
+/* ---- APPLICATION FORM (Mobile) ---- */
+.join-form {
+    display: flex;
+    flex-direction: column;
+    /* stack inputs vertically */
+    gap: 1rem;
+    /* spacing between fields */
+    background-color: #f0f0f0;
+    /* same light gray as cards */
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.join-form label {
+    display: flex;
+    flex-direction: column;
+    /* label above input */
+    font-size: 0.9rem;
+    color: #3D405B;
+}
+/* ---- APPLICATION FORM (Mobile + All Screens) ---- */
+.join-form input[type=text],
+.join-form input[type=tel],
+.join-form input[type=email],
+.join-form select,
+.join-form textarea {
+    width: 100%;
+    padding: 0.6rem;
+    border-top: 1px solid #999;
+    border-right: 1px solid #999;
+    border-bottom: 1px solid #999;
+    border-left: 4px solid #d70000;
+    /* red by default for required */
+    border-radius: 4px;
+    font-size: 1rem;
+    color: #3D405B;
+    background-color: #fff;
+    transition: border-left-color 0.3s ease;
+}
+
+/* Focus state */
+.join-form input:focus,
+.join-form select:focus,
+.join-form textarea:focus {
+    border-left-color: black;
+    outline: none;
+}
+
+/* Valid state */
+.join-form input:required:valid,
+.join-form select:required:valid,
+.join-form textarea:required:valid {
+    border-left-color: green;
 }

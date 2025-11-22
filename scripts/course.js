@@ -27,7 +27,7 @@ const courses = [
         certificate: 'Web and Computer Programming',
         description: 'CSE 111 students become more organized...',
         technology: ['Python'],
-        completed: true 
+        completed: true
     },
     {
         subject: 'CSE',
@@ -64,6 +64,30 @@ const courses = [
 const courseCards = document.getElementById("courseCards");
 const totalCredits = document.getElementById("totalCredits");
 
+// Modal elements
+const modal = document.getElementById("courseModal");
+const closeModal = document.getElementById("closeModal");
+const modalTitle = document.getElementById("modalCourseTitle");
+const modalCode = document.getElementById("modalCourseCode");
+const modalDescription = document.getElementById("modalCourseDescription");
+const modalCredits = document.getElementById("modalCourseCredits");
+
+// Close modal on button click
+closeModal.addEventListener("click", () => modal.close());
+
+// Close modal on clicking outside
+modal.addEventListener("click", (event) => {
+    const rect = modal.getBoundingClientRect();
+    const inside = (
+        event.clientX >= rect.left &&
+        event.clientX <= rect.right &&
+        event.clientY >= rect.top &&
+        event.clientY <= rect.bottom
+    );
+    if (!inside) modal.close();
+});
+
+// Render course cards
 function renderCourses(filter = "all") {
     courseCards.innerHTML = "";
 
@@ -72,24 +96,36 @@ function renderCourses(filter = "all") {
     if (filter === "cse") filtered = courses.filter(c => c.subject === "CSE");
 
     const creditSum = filtered.reduce((sum, course) => sum + course.credits, 0);
-    totalCredits.textContent = creditSum;
+    totalCredits.textContent = `Total Credits: ${creditSum}`;
 
     filtered.forEach(course => {
         const card = document.createElement("div");
         card.className = course.completed ? "course-card completed" : "course-card incomplete";
         card.innerHTML = `
-      <h3>${course.subject} ${course.number}: ${course.title}</h3>
-      <p><strong>Credits:</strong> ${course.credits}</p>
-      <p><strong>Certificate:</strong> ${course.certificate}</p>
-      <p>${course.description}</p>
-      <p><strong>Technologies:</strong> ${course.technology.join(", ")}</p>
-    `;
+          <h3>${course.subject} ${course.number}: ${course.title}</h3>
+          <p><strong>Credits:</strong> ${course.credits}</p>
+          <p><strong>Certificate:</strong> ${course.certificate}</p>
+          <p>${course.description}</p>
+          <p><strong>Technologies:</strong> ${course.technology.join(", ")}</p>
+        `;
+
+        // Add click listener to open modal with course details
+        card.addEventListener("click", () => {
+            modalTitle.textContent = course.title;
+            modalCode.textContent = `${course.subject} ${course.number}`;
+            modalDescription.textContent = course.description;
+            modalCredits.textContent = `Credits: ${course.credits}`;
+            modal.showModal();
+        });
+
         courseCards.appendChild(card);
     });
 }
 
+// Filter buttons
 document.getElementById("allCourses").addEventListener("click", () => renderCourses("all"));
 document.getElementById("wddCourses").addEventListener("click", () => renderCourses("wdd"));
 document.getElementById("cseCourses").addEventListener("click", () => renderCourses("cse"));
 
+// Initial render
 renderCourses();
