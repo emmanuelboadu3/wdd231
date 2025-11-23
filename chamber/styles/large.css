@@ -1,4 +1,168 @@
+/* =============== LARGE SCREEN STYLES =============== */
+
+@media (min-width: 1024px) {
+
+    /* ---- GENERAL LAYOUT ---- */
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+        color: #fff;
+    }
+
+    #menu-btn {
+        display: none;
+    }
+
+    nav {
+        display: flex !important;
+        flex-direction: row;
+        justify-content: flex-end;
+        gap: 2rem;
+        background: none;
+        width: auto;
+    }
+
+    nav a {
+        font-weight: 600;
+        border: none;
+        text-decoration: none;
+        padding: 0.5rem 1rem;
+    }
+
+    nav a:hover {
+        text-decoration: underline;
+    }
+
+    main {
+        padding: 2rem 3rem;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1.5rem;
+    }
+
+    .list {
+        display: block;
+    }
+
+    .list .member-card {
+        margin-bottom: 1.5rem;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 1rem;
+    }
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    /* anchors content to bottom */
+    padding: 2rem 3rem;
+    text-align: left;
+    min-height: 150px;
+    background-color: #004aad;
+    /* keep consistent with small.css */
+    color: white;
+}
+
+footer .contact-info,
+footer .developer-info {
+    flex: 1;
+}
+
+footer .social {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    /* keeps icons aligned */
+    justify-content: flex-start;
+    /* bottom-left placement */
+}
+
+footer .social img {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    cursor: pointer;
+}
+
+footer .social img:hover {
+    transform: scale(1.2);
+    opacity: 0.8;
+}
+
+    .member-card img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+}
+
+@media (min-width: 900px) {
+
+    /* Info Boxes */
+    .info-boxes {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+        margin-top: 2rem;
+    }
+
+    .box {
+        background-color: #fff;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        text-align: left;
+        min-height: 220px;
+    }
+
+    .weather-icon {
+        width: 60px;
+        height: 60px;
+        margin-left: 1rem;
+    }
+
+    /* Hero section side-by-side text and image */
+    .hero {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        text-align: left;
+        gap: 2rem;
+    }
+
+    .hero img {
+        flex: 1;
+        max-height: 400px;
+        object-fit: cover;
+    }
+
+    .hero-text {
+        flex: 1;
+    }
+
+    /* Spotlights in 3-column grid */
+    #spotlight-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+        margin-top: 2rem;
+    }
+
+    .spotlight-card {
+        text-align: left;
+    }
+
+    .spotlight-card img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 1rem;
+    }
+}
+
 /* =============== MODAL — LARGE SCREEN OPTIMIZATION =============== */
+
 @media (min-width: 768px) {
     dialog {
         padding: 2rem;
@@ -31,8 +195,7 @@
         max-width: 650px;
     }
 }
-
-/* =============== RESET & BASE =============== */
+/* Reset & Base */
 * {
     box-sizing: border-box;
 }
@@ -65,7 +228,7 @@ h2 {
     color: #E07A5F;
 }
 
-/* =============== JOIN PAGE LAYOUT =============== */
+/* Layout for Join Page */
 .join-container {
     display: flex;
     flex-direction: column;
@@ -88,7 +251,7 @@ h2 {
     }
 }
 
-/* =============== FORM STYLING =============== */
+/* Form Styling */
 form {
     margin: 1rem 2%;
 }
@@ -157,13 +320,12 @@ input:-webkit-autofill {
     -webkit-text-fill-color: #3D405B;
 }
 
-/* =============== MEMBERSHIP CARDS =============== */
+/* Membership Cards — Base */
 .membership-cards {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
 }
-
 .card {
     background-color: #f0f0f0;
     border-radius: 8px;
@@ -196,7 +358,7 @@ input:-webkit-autofill {
     background-color: #555;
 }
 
-/* =============== ANIMATION KEYFRAMES =============== */
+/* Animation Keyframes */
 @keyframes fadeInUp {
     to {
         opacity: 1;
@@ -204,7 +366,7 @@ input:-webkit-autofill {
     }
 }
 
-/* =============== MODALS =============== */
+/* Modals */
 .modal {
     display: none;
     /* hidden by default */
@@ -244,7 +406,7 @@ input:-webkit-autofill {
     color: #3D405B;
 }
 
-/* =============== CONFIRMATION RESULTS (thankyou.html) =============== */
+/* Confirmation Results (thankyou.html) */
 #submitted-data,
 #results {
     background-color: #F4F1DE;
