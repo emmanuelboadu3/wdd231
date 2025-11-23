@@ -298,28 +298,24 @@ footer .social img:hover {
     font-size: 1.2rem;
 }
 
-/* ---- MEMBERSHIP LEVELS (Mobile) ---- */
+/* ---- MEMBERSHIP LEVELS (Mobile Base) ---- */
 .membership-cards {
     display: flex;
     flex-direction: column;
     /* stack vertically */
     gap: 1rem;
-    /* spacing between cards */
     margin-top: 1.5rem;
 }
 
 .card {
     background-color: #f0f0f0;
-    /* light gray background */
     border-radius: 8px;
-    /* rounded corners */
     padding: 1rem;
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    /* subtle shadow for button look */
 }
 
 .card h3 {
@@ -343,7 +339,6 @@ footer .social img:hover {
 .card a:hover {
     background-color: #00357d;
 }
-
 /* ---- APPLICATION FORM (Mobile) ---- */
 .join-form {
     display: flex;
