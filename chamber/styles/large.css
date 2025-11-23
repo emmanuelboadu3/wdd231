@@ -54,47 +54,44 @@
         border-bottom: 1px solid #ccc;
         padding-bottom: 1rem;
     }
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    /* anchors content to bottom */
+    padding: 2rem 3rem;
+    text-align: left;
+    min-height: 150px;
+    background-color: #004aad;
+    /* keep consistent with small.css */
+    color: white;
+}
 
-    footer {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        padding: 2rem 3rem;
-        text-align: left;
-        min-height: 150px;
-        position: relative;
-       
-    }
+footer .contact-info,
+footer .developer-info {
+    flex: 1;
+}
 
-    footer .contact-info,
-    footer .developer-info {
-        flex: 1;
-    }
+footer .social {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    /* keeps icons aligned */
+    justify-content: flex-start;
+    /* bottom-left placement */
+}
 
-    .logo {
-        width: 60px;
-        height: 60px;
-    }
-    
-    footer .social {
-            position: absolute;
-            bottom: 1rem;
-            left: 3rem;
-            display: flex;
-            gap: 15px;
-        }
-    
-     footer .social img {
-            width: 24px;
-            height: 24px;
-            transition: transform 0.3s ease, opacity 0.3s ease;
-            cursor: pointer;
-        }
-    
-    footer .social img:hover {
-            transform: scale(1.2);
-            opacity: 0.8;
-        }
+footer .social img {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    cursor: pointer;
+}
+
+footer .social img:hover {
+    transform: scale(1.2);
+    opacity: 0.8;
+}
 
     .member-card img {
         width: 100%;
@@ -323,7 +320,7 @@ input:-webkit-autofill {
     -webkit-text-fill-color: #3D405B;
 }
 
-/* Membership Cards */
+/* Membership Cards — Base */
 .membership-cards {
     display: flex;
     flex-direction: column;

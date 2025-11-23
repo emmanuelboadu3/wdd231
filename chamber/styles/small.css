@@ -136,44 +136,39 @@ main {
     margin: 0 auto 1rem;
     display: block;
 }
-
 /* ---- FOOTER ---- */
 footer {
-    max-width: 100%;
+    width: 100%;
     margin: 0 auto;
     padding: 1.5rem 1rem;
-
     background-color: #004aad;
     color: white;
     text-align: center;
     font-size: 0.9rem;
-    margin-top: 2rem;
     min-height: 120px;
-
+    margin-top: auto;
+    /* ensures sticky bottom with flex layout */
 }
 
-/* Small screens */
 footer .social {
     display: flex;
     justify-content: center;
+    /* center icons on small screens */
     gap: 15px;
     margin-top: 1rem;
 }
 
-/* Icons themselves */
-.social img {
+footer .social img {
     width: 24px;
     height: 24px;
     transition: transform 0.3s ease, opacity 0.3s ease;
     cursor: pointer;
 }
 
-/* Hover effect */
-.social img:hover {
+footer .social img:hover {
     transform: scale(1.2);
     opacity: 0.8;
 }
-
 /* ---- HOMEPAGE STYLES ---- */
 
 /* Hero Section */
