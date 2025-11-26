@@ -1,0 +1,79 @@
+/* Base Card Layout (small screens) */
+#allplaces .card {
+    margin: 1rem 8px;
+    border: 1px solid #999;
+    background-color: #eee;
+    border-radius: 8px;
+    overflow: hidden;
+    display: grid;
+    grid-template-areas:
+        "title"
+        "description"
+        "address"
+        "image";
+}
+.extra-info {
+    display: none;
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: #444;
+}
+
+.extra-info.visible {
+    display: block;
+}
+#allplaces .card img {
+    aspect-ratio: 3 / 2;
+    width: 100%;
+    height: auto;
+}
+
+/* Medium Screens */
+@media only screen and (min-width: 38rem) {
+    #allplaces .card {
+        grid-template-columns: 300px 1fr;
+        /* fixed image + flexible text */
+        grid-template-areas: "image text";
+    }
+
+    #allplaces .card img {
+        aspect-ratio: 3/2;
+        grid-area: image;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    #allplaces .card .text {
+        grid-area: text;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 1rem;
+    }
+ #allplaces .card h2 {
+     margin-top: 0;
+ }
+}
+@media (min-width: 38rem) {
+    #allplaces .card figure img {
+        transition: transform 0.3s ease, filter 0.3s ease;
+    }
+
+    #allplaces .card figure:hover img {
+        transform: scale(1.05);
+        filter: brightness(1.1);
+    }
+}
+/* Large Screens */
+@media only screen and (min-width: 64rem) {
+    #allplaces {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        /* two cards per row */
+        gap: 20px;
+    }
+ #allplaces .card h2{
+        margin-top: 0;
+    }
+}
