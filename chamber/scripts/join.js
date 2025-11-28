@@ -1,15 +1,6 @@
 // Set timestamp
 document.getElementById("timestamp").value = new Date().toISOString();
 
-// Hamburger menu toggle
-const menuBtn = document.getElementById('menu-btn');
-const navMenu = document.getElementById('nav-menu');
-
-menuBtn.addEventListener('click', () => {
-    navMenu.classList.toggle('show');   // show/hide nav
-    menuBtn.classList.toggle('show');   // toggle hamburger to X
-});
-
 // Modal functionality
 const openButtons = document.querySelectorAll(".open-modal");
 const closeButtons = document.querySelectorAll(".close");

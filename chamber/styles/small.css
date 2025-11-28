@@ -302,9 +302,15 @@ footer .social img:hover {
 .membership-cards {
     display: flex;
     flex-direction: column;
-    /* stack vertically */
+    /* stack vertically on mobile */
     gap: 1rem;
     margin-top: 1.5rem;
+    box-sizing: border-box;
+    /* ensures proper sizing */
+    max-width: 100%;
+    /* prevents horizontal scrolling */
+    padding: 0;
+    /* remove extra space that could create tangents */
 }
 
 .card {
@@ -316,6 +322,9 @@ footer .social img:hover {
     flex-direction: column;
     align-items: center;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    width: 100%;
+    /* ensures cards do not overflow container */
 }
 
 .card h3 {
@@ -325,7 +334,8 @@ footer .social img:hover {
 }
 
 .card a {
-    margin-top: 0.5rem;
+    margin-top: auto;
+    /* push button to bottom for consistent alignment */
     display: inline-block;
     padding: 0.4rem 0.8rem;
     background-color: #004aad;
@@ -339,26 +349,30 @@ footer .social img:hover {
 .card a:hover {
     background-color: #00357d;
 }
+
 /* ---- APPLICATION FORM (Mobile) ---- */
 .join-form {
     display: flex;
     flex-direction: column;
-    /* stack inputs vertically */
     gap: 1rem;
-    /* spacing between fields */
     background-color: #f0f0f0;
-    /* same light gray as cards */
     padding: 1rem;
     border-radius: 8px;
+    box-sizing: border-box;
+    /* fix overflow issues */
+    max-width: 100%;
+    /* prevents horizontal scrolling */
 }
 
 .join-form label {
     display: flex;
     flex-direction: column;
-    /* label above input */
     font-size: 0.9rem;
     color: #3D405B;
+    width: 100%;
+    box-sizing: border-box;
 }
+
 /* ---- APPLICATION FORM (Mobile + All Screens) ---- */
 .join-form input[type=text],
 .join-form input[type=tel],
@@ -366,17 +380,20 @@ footer .social img:hover {
 .join-form select,
 .join-form textarea {
     width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
     padding: 0.6rem;
-    border-top: 1px solid #999;
-    border-right: 1px solid #999;
-    border-bottom: 1px solid #999;
-    border-left: 4px solid #d70000;
-    /* red by default for required */
+    border: 1px solid #999;
+    border-left-width: 4px;
+    border-left-color: #d70000;
+    /* red for required */
     border-radius: 4px;
     font-size: 1rem;
     color: #3D405B;
     background-color: #fff;
     transition: border-left-color 0.3s ease;
+    display: block;
+    /* ensures inputs stay block-level and aligned */
 }
 
 /* Focus state */

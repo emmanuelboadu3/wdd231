@@ -7,17 +7,15 @@
     <meta name="description" content="Membership application form for the Kumasi Chamber of Commerce.">
     <meta name="author" content="Emmanuel Boadu">
 
-    <title>Join the Chamber - Kumasi Chamber of Commerce</title>
+    <title>Join - Kumasi Chamber of Commerce</title>
 
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico">
 
-    <!-- Open Graph / Social Sharing -->
-
-    <meta property="og:title" content="Kumasi Chamber of Commerce Directory">
-    <meta property="og:description"
-        content="Find and connect with local businesses in Kumasi through our chamber directory.">
-    <meta property="og:image" content="https://emmanuelboadu3.github.io/wdd231/chamber/og-image.webp">
-    <meta property="og:url" content="https://emmanuelboadu3.github.io/wdd231/chamber/directory.html">
+    <!-- Correct Open Graph -->
+    <meta property="og:title" content="Join the Kumasi Chamber of Commerce">
+    <meta property="og:description" content="Apply to become a member of the Kumasi Chamber of Commerce.">
+    <meta property="og:image" content="https://emmanuelboadu3.github.io/wdd231/chamber/images/og-image.webp">
+    <meta property="og:url" content="https://emmanuelboadu3.github.io/wdd231/chamber/join.html">
     <meta property="og:type" content="website">
 
     <!-- Google Fonts -->
@@ -32,6 +30,7 @@
 
     <!-- JavaScript -->
     <script defer src="scripts/join.js"></script>
+    <script defer src="scripts/navigation.js"></script>     
 </head>
 
 <body>
@@ -59,34 +58,34 @@
         <div class="join-container">
 
             <!-- FORM START -->
-            <form method="get" action="thankyou.html" class="join-form">
+            <form method="get" action="thankyou.html" class="join-form" autocomplete="on">
 
                 <label>First Name
-                    <input type="text" name="first" required autocomplete="given-name" title="Your First Name">
+                    <input type="text" name="first" required autocomplete="given-name" title="Enter your first name">
                 </label>
 
                 <label>Last Name
-                    <input type="text" name="last" required autocomplete="family-name" title="Your Last Name">
+                    <input type="text" name="last" required autocomplete="family-name" title="Enter your last name">
                 </label>
 
                 <label>Organizational Title
-                    <input type="text" name="orgTitle" autocomplete="organization-title"
-                        title="Your role in your organization" pattern="^[A-Za-z\\s-]{7,}$"
-                        placeholder="Manager, Director, etc.">
+                    <input type="text" name="orgTitle" required autocomplete="organization-title"
+                        pattern="^[A-Za-z\s-]{7,}$" title="At least 7 letters, hyphens, or spaces"
+                        placeholder="E.g. Senior Manager">
                 </label>
 
                 <label>Email
                     <input type="email" name="email" required autocomplete="email" placeholder="example@gmail.com"
-                        title="Your Email Address">
+                        title="Enter a valid email address">
                 </label>
 
                 <label>Mobile Phone
-                    <input type="tel" name="phone" required autocomplete="tel" title="Mobile Phone Number">
+                    <input type="tel" name="phone" required autocomplete="tel" title="Enter your mobile phone number">
                 </label>
 
                 <label>Business / Organization Name
                     <input type="text" name="organization" required autocomplete="organization"
-                        title="Your Business or Organization Name">
+                        title="Enter your organization's name">
                 </label>
 
                 <label>Membership Level
@@ -113,29 +112,31 @@
 
             <!-- MEMBERSHIP CARDS -->
             <section class="membership-cards">
+
                 <div class="card" id="np-card">
                     <h3>NP Membership</h3>
-                    <p>No cost — for non-profit organizations.</p>
+                    <p>Free membership for non-profit organizations.</p>
                     <a href="#np-modal" class="open-modal">View Benefits</a>
                 </div>
 
                 <div class="card" id="bronze-card">
                     <h3>Bronze Membership</h3>
-                    <p>Essential starter benefits for growing businesses.</p>
+                    <p>Beginner benefits for small businesses.</p>
                     <a href="#bronze-modal" class="open-modal">View Benefits</a>
                 </div>
 
                 <div class="card" id="silver-card">
                     <h3>Silver Membership</h3>
-                    <p>Enhanced visibility and event access.</p>
+                    <p>Improved visibility & training access.</p>
                     <a href="#silver-modal" class="open-modal">View Benefits</a>
                 </div>
 
                 <div class="card" id="gold-card">
                     <h3>Gold Membership</h3>
-                    <p>Top-tier promotions and exclusive perks.</p>
+                    <p>Top-tier coverage & exclusive features.</p>
                     <a href="#gold-modal" class="open-modal">View Benefits</a>
                 </div>
+
             </section>
 
         </div>
@@ -147,8 +148,8 @@
                 <h3>NP Membership Benefits</h3>
                 <ul>
                     <li>Free membership</li>
-                    <li>Access to community events</li>
-                    <li>Eligibility for nonprofit grants</li>
+                    <li>Community event access</li>
+                    <li>Non-profit grants eligibility</li>
                 </ul>
             </div>
         </div>
@@ -158,7 +159,7 @@
                 <button class="close">&times;</button>
                 <h3>Bronze Membership Benefits</h3>
                 <ul>
-                    <li>Business directory listing</li>
+                    <li>Directory listing</li>
                     <li>Event invitations</li>
                     <li>Newsletter promotion</li>
                 </ul>
@@ -184,7 +185,7 @@
                 <ul>
                     <li>Premium advertising</li>
                     <li>VIP event access</li>
-                    <li>Exclusive business mentoring</li>
+                    <li>Business mentoring</li>
                 </ul>
             </div>
         </div>
@@ -199,22 +200,20 @@
         </div>
 
         <div class="social">
-            <a href="https://github.com/emmanuelboadu3" target="_blank" aria-label="GitHub">
-                <img src="images/github.svg" alt="GitHub" width="16" height="16">
+            <a href="https://github.com/emmanuelboadu3" target="_blank">
+                <img src="images/github.svg" alt="GitHub" width="16">
             </a>
-        
-            <a href="https://www.linkedin.com/in/emmanuel-boadu-2681842a6" target="_blank" aria-label="LinkedIn">
-                <img src="images/linkedin-square.svg" alt="LinkedIn" width="16" height="16">
+            <a href="https://linkedin.com/in/emmanuel-boadu-2681842a6" target="_blank">
+                <img src="images/linkedin-square.svg" alt="LinkedIn" width="16">
             </a>
-        
-            <a href="https://instagram.com/kojo_barjona19" target="_blank" aria-label="Instagram">
-                <img src="images/instagram-circle.svg" alt="Instagram" width="16" height="16">
+            <a href="https://instagram.com/kojo_barjona19" target="_blank">
+                <img src="images/instagram-circle.svg" alt="Instagram" width="16">
             </a>
-        
-            <a href="https://www.facebook.com/share/1APo2Pr2dP/" target="_blank" aria-label="Facebook">
-                <img src="images/facebook.svg" alt="Facebook" width="16" height="16">
+            <a href="https://facebook.com/share/1APo2Pr2dP/" target="_blank">
+                <img src="images/facebook.svg" alt="Facebook" width="16">
             </a>
         </div>
+
         <div class="developer-info">
             <p>Developed by Emmanuel Boadu | WDD 231</p>
             <p>&copy; <span id="year"></span> | Last Modified: <span id="lastModified"></span></p>
