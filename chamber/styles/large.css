@@ -365,31 +365,6 @@ input:-webkit-autofill {
 }
 
 
-
-.modal-content {
-    background-color: #fff;
-    padding: 2rem;
-    border-radius: 8px;
-    max-width: 400px;
-    width: 90%;
-    text-align: left;
-    position: relative;
-}
-
-.modal-content h3 {
-    margin-top: 0;
-}
-
-.modal .close {
-    position: absolute;
-    top: 0.5rem;
-    right: 0.75rem;
-    background: none;
-    border: none;
-    font-size: 1.5rem;
-    cursor: pointer;
-    color: #3D405B;
-}
 /* =============== MODAL — LARGE SCREEN OVERRIDES =============== */
 @media (min-width: 1024px) {
     .modal-content {
