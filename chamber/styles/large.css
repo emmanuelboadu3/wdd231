@@ -98,41 +98,39 @@ footer .social img:hover {
         height: auto;
         display: block;
     }
+/* ---- MEMBERSHIP LEVELS (Large Screens) ---- */
+@media (min-width: 1025px) {
+    .membership-cards {
+        flex-direction: column;
+        /* still column, but can adjust if needed */
+        gap: 1.5rem;
+    }
 
+    .card {
+        padding: 1.5rem;
+        justify-content: space-between;
+        min-height: 150px;
+        opacity: 0;
+        transform: translateY(20px);
+        animation: fadeInUp 0.8s ease-out forwards;
+    }
 
-        /* ---- MEMBERSHIP LEVELS (Large Screens) ---- */
-        @media (min-width: 1025px) {
-            .membership-cards {
-                flex-direction: column;
-                /* still column, but can adjust if needed */
-                gap: 1.5rem;
-            }
-    
-            .card {
-                padding: 1.5rem;
-                justify-content: space-between;
-                min-height: 150px;
-                opacity: 0;
-                transform: translateY(20px);
-                animation: fadeInUp 0.8s ease-out forwards;
-            }
-    
-            .card h3 {
-                font-size: 1.2rem;
-                /* slightly larger text */
-            }
-    
-            .card a {
-                margin-top: auto;
-                padding: 0.5rem 1rem;
-                background-color: #3D405B;
-                /* desktop color scheme */
-            }
-    
-            .card a:hover {
-                background-color: #555;
-            }
-        }
+    .card h3 {
+        font-size: 1.2rem;
+        /* slightly larger text */
+    }
+
+    .card a {
+        margin-top: auto;
+        padding: 0.5rem 1rem;
+        background-color: #3D405B;
+        /* desktop color scheme */
+    }
+
+    .card a:hover {
+        background-color: #555;
+    }
+}
 }
 
 @media (min-width: 900px) {
