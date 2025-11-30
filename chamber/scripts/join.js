@@ -10,33 +10,33 @@ const modals = document.querySelectorAll(".modal");
 openButtons.forEach(btn => {
     btn.addEventListener("click", function (e) {
         e.preventDefault();
-        document.querySelector(btn.getAttribute("href")).style.display = "flex";
+        const modalId = btn.dataset.modal;
+        const modal = document.getElementById(modalId);
+        if (modal) modal.style.display = "flex";
     });
 });
 
 // Close modal
 closeButtons.forEach(btn => {
     btn.addEventListener("click", function () {
-        btn.parentElement.parentElement.style.display = "none";
+        btn.closest(".modal").style.display = "none";
     });
 });
 
-// Close modal when clicking outside content
+// Close modal when clicking outside
 window.addEventListener("click", function (e) {
     modals.forEach(modal => {
         if (e.target === modal) modal.style.display = "none";
     });
 });
 
+// FOOTER YEAR & LAST MODIFIED
 document.addEventListener("DOMContentLoaded", () => {
-    // Update year
     const yearEl = document.getElementById("year");
     if (yearEl) yearEl.textContent = new Date().getFullYear();
 
-    // Update last modified
     const lastModifiedEl = document.getElementById("lastModified");
     if (lastModifiedEl) {
         lastModifiedEl.textContent = new Date(document.lastModified).toLocaleString();
     }
 });
-
