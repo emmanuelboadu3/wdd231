@@ -140,7 +140,7 @@ footer .social img:hover {
     .info-boxes {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        gap: 2rem;
+        gap: 1.5rem;
         margin-top: 2rem;
     }
 
@@ -163,7 +163,7 @@ footer .social img:hover {
         align-items: center;
         justify-content: space-between;
         text-align: left;
-        gap: 2rem;
+        gap: 1.5rem;
     }
 
     .hero img {
@@ -205,11 +205,11 @@ footer .social img:hover {
     }
 
     dialog h2 {
-        font-size: 1.8rem;
+        font-size: 1.1rem;
     }
 
     dialog h3 {
-        font-size: 1.3rem;
+        font-size: 1.1rem;
         margin-bottom: 1.2rem;
     }
 
@@ -370,10 +370,6 @@ input:-webkit-autofill {
     .modal-content {
         max-width: 600px;
         /* wider modal on desktop */
-        padding: 2rem;
-        /* more spacing */
-        border-radius: 8px;
-        /* tighter rounding */
     }
 
     .modal .close {
@@ -386,7 +382,7 @@ input:-webkit-autofill {
 #submitted-data,
 #results {
     background-color: #F4F1DE;
-    padding: 1rem;
+    padding: 1.5rem;
     border: 1px solid #E07A5F;
     border-radius: 6px;
     margin-top: 1rem;

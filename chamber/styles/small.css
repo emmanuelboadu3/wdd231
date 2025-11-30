@@ -315,7 +315,7 @@ footer .social img:hover {
 
 .card {
     background-color: #f0f0f0;
-    border-radius: 8px;
+    border-radius: 10px;
     padding: 1rem;
     text-align: center;
     display: flex;
