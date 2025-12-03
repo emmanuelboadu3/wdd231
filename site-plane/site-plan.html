@@ -30,7 +30,8 @@
         }
 
         a {
-            color: #E67E22;
+            color: #D35400;
+            /* Darker orange for better contrast */
         }
 
         pre {
@@ -51,93 +52,129 @@
             display: block;
             margin: 15px 0;
         }
-    </style>
 
+        .skip-link {
+            position: absolute;
+            left: -999px;
+            top: auto;
+            width: 1px;
+            height: 1px;
+            overflow: hidden;
+        }
+
+        .skip-link:focus {
+            position: static;
+            width: auto;
+            height: auto;
+            margin: 10px;
+            background: #fff;
+            border: 2px solid #2C3E50;
+            padding: 5px;
+        }
+    </style>
 </head>
 
 <body>
+
+    <!-- Skip link for keyboard users -->
+    <a href="#maincontent" class="skip-link">Skip to main content</a>
 
     <header>
         <h1>Beginner Coding Tutorials Website - Site Plan</h1>
     </header>
 
-    <!-- Site Name -->
-    <section>
-        <h2>Site Name</h2>
-        <p><strong>CodeStart Tutorials</strong> – A website designed to teach beginners HTML, CSS, and JavaScript in a
-            simple and interactive way.</p>
-        <p>Optional domain: <a href="#">codestart.org</a></p>
-    </section>
+    <main id="maincontent">
 
-    <!-- Site Purpose -->
-    <section>
-        <h2>Site Purpose</h2>
-        <p>The site provides beginner-friendly coding tutorials, interactive practice exercises, and resources to help
-            users gain confidence in web development. It will cover HTML, CSS, and JavaScript basics, with step-by-step
-            examples and practice challenges.</p>
-    </section>
+        <!-- Site Name -->
+        <section>
+            <h2>Site Name</h2>
+            <p><strong>CodeStart Tutorials</strong> – A website designed to teach beginners HTML, CSS, and JavaScript in
+                a
+                simple and interactive way.</p>
+            <p>Optional domain: <a href="https://codestart.org">codestart.org</a></p>
+        </section>
 
-    <!-- Scenarios -->
-    <section>
-        <h2>Scenarios</h2>
-        <ul>
-            <li>“How do I create a simple webpage using HTML and CSS?”</li>
-            <li>“Where can I practice JavaScript exercises online?”</li>
-            <li>“How do I combine HTML, CSS, and JavaScript in a single project?”</li>
-        </ul>
-    </section>
+        <!-- Site Purpose -->
+        <section>
+            <h2>Site Purpose</h2>
+            <p>The site provides beginner-friendly coding tutorials, interactive practice exercises, and resources to
+                help
+                users gain confidence in web development. It will cover HTML, CSS, and JavaScript basics, with
+                step-by-step
+                examples and practice challenges.</p>
+        </section>
 
-    <!-- Color Scheme -->
-    <section>
-        <h2>Color Scheme</h2>
-        <ul>
-            <li><strong>Primary Color:</strong> #2C3E50 – for headings and major sections.</li>
-            <li><strong>Accent Color:</strong> #E67E22 – for links, highlights, and interactive elements.</li>
-            <li><strong>Background Color:</strong> #f8f9fa – for page background.</li>
-        </ul>
-    </section>
+        <!-- Scenarios -->
+        <section>
+            <h2>Scenarios</h2>
+            <ul>
+                <li>“How do I create a simple webpage using HTML and CSS?”</li>
+                <li>“Where can I practice JavaScript exercises online?”</li>
+                <li>“How do I combine HTML, CSS, and JavaScript in a single project?”</li>
+            </ul>
+        </section>
 
-    <!-- Typography -->
-    <section>
-        <h2>Typography</h2>
-        <ul>
-            <li><strong>Headings:</strong> Playfair Display</li>
-            <li><strong>Body Text:</strong> Roboto</li>
-            <li><strong>Code Snippets:</strong> Courier New</li>
-        </ul>
-    </section>
+        <!-- Color Scheme -->
+        <section>
+            <h2>Color Scheme</h2>
+            <ul>
+                <li><strong>Primary Color:</strong> #2C3E50 – for headings and major sections.</li>
+                <li><strong>Accent Color:</strong> #D35400 – for links, highlights, and interactive elements.</li>
+                <li><strong>Background Color:</strong> #f8f9fa – for page background.</li>
+            </ul>
+        </section>
 
-    <!-- Wireframe -->
-    <section>
-        <h2>Wireframe</h2>
+        <!-- Typography -->
+        <section>
+            <h2>Typography</h2>
+            <ul>
+                <li><strong>Headings:</strong> Playfair Display</li>
+                <li><strong>Body Text:</strong> Roboto</li>
+                <li><strong>Code Snippets:</strong> Courier New</li>
+            </ul>
+        </section>
 
-        <h3>Mobile View Wireframe</h3>
-        <p>Represents stacked layout, 1-column tutorials and challenges.</p>
-        <img src="images/mobile-wireframe.webp" alt="Mobile wireframe sketch" class="wireframe">
+        <!-- Wireframe -->
+        <section>
+            <h2>Wireframe</h2>
 
-        <h3>Desktop/Tablet View Wireframe</h3>
-        <p>Includes 3-column tutorial grid and 2-column practice challenges.</p>
-        <img src="images/large-wireframe.webp" alt="Large screen wireframe sketch" class="wireframe">
-    </section>
+            <h3>Mobile View Wireframe</h3>
+            <p>Represents stacked layout, 1-column tutorials and challenges.</p>
+            <img src="images/mobile-wireframe.webp" alt="Mobile wireframe sketch showing stacked layout"
+                class="wireframe">
 
-    <!-- CSS Plan -->
-    <section>
-        <h2>CSS Plan</h2>
-        <p>Supporting CSS will be created to apply the selected color scheme and typography. Media queries will ensure
-            responsive layouts across mobile, tablet, and desktop.</p>
-    </section>
+            <h3>Desktop/Tablet View Wireframe</h3>
+            <p>Includes 3-column tutorial grid and 2-column practice challenges.</p>
+            <img src="images/large-wireframe.webp" alt="Large screen wireframe sketch showing grid layout"
+                class="wireframe">
+        </section>
 
-    <!-- Testing -->
-    <section>
-        <h2>Testing</h2>
-        <p>Testing will include:</p>
-        <ul>
-            <li>HTML Validation: <a href="https://validator.w3.org/">W3C Markup Validator</a></li>
-            <li>Accessibility: <a href="https://wave.webaim.org/">WAVE Web Accessibility Tool</a></li>
-            <li>Performance & Best Practices: Chrome DevTools Lighthouse</li>
-            <li>Color Contrast: <a href="https://webaim.org/resources/contrastchecker/">WebAIM Contrast Checker</a></li>
-        </ul>
-    </section>
+        <!-- CSS Plan -->
+        <section>
+            <h2>CSS Plan</h2>
+            <p>Supporting CSS will be created to apply the selected color scheme and typography. Media queries will
+                ensure
+                responsive layouts across mobile, tablet, and desktop.</p>
+        </section>
+
+        <!-- Testing -->
+        <section>
+            <h2>Testing</h2>
+            <p>Testing will include:</p>
+            <ul>
+                <li>HTML Validation: <a href="https://validator.w3.org/">W3C Markup Validator</a></li>
+                <li>Accessibility: <a href="https://wave.webaim.org/">WAVE Web Accessibility Tool</a></li>
+                <li>Performance & Best Practices: Chrome DevTools Lighthouse</li>
+                <li>Color Contrast: <a href="https://webaim.org/resources/contrastchecker/">WebAIM Contrast Checker</a>
+                </li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 CodeStart Tutorials. Built by Emmanuel Boadu.</p>
+    </footer>
 
 </body>
 
