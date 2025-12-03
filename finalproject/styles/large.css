@@ -1,0 +1,42 @@
+/* large.css */
+
+/* Apply overrides for larger screens */
+@media (min-width: 768px) {
+
+    /* Navigation horizontal */
+    .site-header {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .primary-nav ul {
+        flex-direction: row;
+        /* horizontal links */
+        gap: 1rem;
+        margin-left: auto;
+    }
+
+    /* Cards in grid */
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 columns */
+    }
+}
+
+@media (min-width: 1024px) {
+
+    /* Wider layouts */
+    .cards {
+        grid-template-columns: repeat(3, 1fr);
+        /* 3 columns */
+    }
+
+    .site-header {
+        padding: 1rem 2rem;
+    }
+}
+@media (min-width: 1024px) {
+    .cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

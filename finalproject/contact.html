@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact CodeStart Tutorials.">
+    <meta name="author" content="Emmanuel Boadu">
+    <title>Contact — CodeStart</title>
+
+    <link rel="icon" href="favicon.ico">
+
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <script defer src="scripts/navigation.js"></script>
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/main.js" defer></script>
+</head>
+
+<body>
+    <div class="logo-title">
+        <img src="images/logo.svg" alt="CodeStart Tutorials" class="logo" width="60" height="60" fetchpriority="high"
+            loading="eager">
+        <h1>CodeStart Tutorials</h1>
+    </div>
+    <header class="site-header">
+        <nav id="primary-nav" class="primary-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tutorials.html">Tutorials</a></li>
+                <li><a href="practice.html">Practice</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <section>
+                <h1>Contact Us</h1>
+                <form id="contact-form" class="join-form" action="form-action.html" method="GET">
+                    <label for="first-name">First Name:</label>
+                    <input type="text" id="first-name" name="first-name" required placeholder="Your First Name">
+    
+                    <label for="last-name">Last Name:</label>
+                    <input type="text" id="last-name" name="last-name" required placeholder="Your Last Name">
+    
+                    <label for="phone">Mobile Phone:</label>
+                    <input type="tel" id="phone" name="phone" required autocomplete="tel"
+                        title="Enter your mobile phone number">
+    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required placeholder="you@example.com">
+    
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required placeholder="Write your message"></textarea>
+    
+                    <button type="submit">Send Message</button>
+                </form>
+            </section>
+        </div>
+    </main>
+
+
+<footer class="site-footer">
+    <p>&copy; <span id="year"></span> CodeStart Tutorials. Built by Emmanuel Boadu.</p>
+    <p>
+        <a href="attribution.html">Attributions</a> |
+        <a href="https://example.com/your-video-link" target="_blank" rel="noopener">Project video</a>
+    </p>
+    <div class="social">
+        <a href="https://github.com/emmanuelboadu3" target="_blank">
+            <img src="images/github.svg" alt="GitHub" width="16">
+        </a>
+        <a href="https://linkedin.com/in/emmanuel-boadu-2681842a6" target="_blank">
+            <img src="images/linkedin-square.svg" alt="LinkedIn" width="16">
+        </a>
+        <a href="https://instagram.com/kojo_barjona19" target="_blank">
+            <img src="images/instagram-circle.svg" alt="Instagram" width="16">
+        </a>
+        <a href="https://facebook.com/share/1APo2Pr2dP/" target="_blank">
+            <img src="images/facebook.svg" alt="Facebook" width="16">
+        </a>
+    </div>
+    <div class="developer-info">
+        <p>Developed by Emmanuel Boadu | WDD 231</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </div>
+</footer>
+
+</body>
+
+</html>

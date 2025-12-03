@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Browse beginner-friendly tutorials in HTML, CSS, and JavaScript." />
+    <meta name="author" content="Emmanuel Boadu" />
+    <title>Tutorials — CodeStart</title>
+
+    <meta property="og:title" content="CodeStart Tutorials — Browse Tutorials" />
+    <meta property="og:description" content="A curated list of beginner-friendly web development tutorials." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://yourdomain.example/finalproject/tutorials.html" />
+    <meta property="og:image" content="images/og-image.png" />
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/small.css" />
+    <link rel="stylesheet" href="styles/large.css" />
+    <script type="module" src="scripts/main.js" defer></script>
+
+    <script defer src="scripts/navigation.js"></script>
+    <script src="scripts/main.js" defer></script>
+    <script src="scripts/tutorials.js" defer></script>
+</head>
+
+<body>
+    
+<header class="site-header">
+
+    <div class="logo-title">
+        <img src="images/logo.svg" alt="CodeStart Tutorials" class="logo" width="60" height="60" fetchpriority="high"
+            loading="eager">
+        <h1>CodeStart Tutorials</h1>
+    </div>
+    <nav id="primary-nav" class="primary-nav">
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="tutorials.html">Tutorials</a></li>
+            <li><a href="practice.html">Practice</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Open navigation">
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+    </button>
+
+</header>
+
+<main class="tutorials-page">
+
+    <h2>Web Development Tutorials</h2>
+
+    <div class="tutorials-container">
+
+        <!-- TUTORIAL CARDS -->
+        <section class="tutorial-cards">
+
+            <div class="card" id="html-card">
+                <h3>Intro to HTML</h3>
+                <p>Learn basic tags, structure, and semantics.</p>
+                <a class="open-modal" data-modal="html-modal">View Details</a>
+            </div>
+
+            <div class="card" id="css-card">
+                <h3>CSS Flexbox</h3>
+                <p>Master flexible layouts and alignment.</p>
+                <a class="open-modal" data-modal="css-modal">View Details</a>
+            </div>
+
+            <div class="card" id="js-card">
+                <h3>JavaScript DOM</h3>
+                <p>Manipulate elements and handle events.</p>
+                <a class="open-modal" data-modal="js-modal">View Details</a>
+            </div>
+
+        </section>
+    </div>
+
+    <!-- MODALS -->
+    <div id="html-modal" class="modal">
+        <div class="modal-content">
+            <button class="close">&times;</button>
+            <h3>Intro to HTML</h3>
+            <ul>
+                <li>Difficulty: Beginner</li>
+                <li>Duration: 20 minutes</li>
+                <li>Category: HTML</li>
+            </ul>
+            <p>Learn the fundamentals of HTML structure, headings, paragraphs, and semantic elements.</p>
+            <a href="https://example.com/html-intro" target="_blank">Open Tutorial</a>
+        </div>
+    </div>
+
+    <div id="css-modal" class="modal">
+        <div class="modal-content">
+            <button class="close">&times;</button>
+            <h3>CSS Flexbox</h3>
+            <ul>
+                <li>Difficulty: Intermediate</li>
+                <li>Duration: 30 minutes</li>
+                <li>Category: CSS</li>
+            </ul>
+            <p>Learn how to use flex containers to build responsive layouts.</p>
+            <a href="https://example.com/css-flexbox" target="_blank">Open Tutorial</a>
+        </div>
+    </div>
+
+</main>
+
+    <footer class="site-footer">
+        <p>&copy; <span id="year"></span> CodeStart Tutorials.</p>
+        <p>
+            <a href="attribution.html">Attributions</a> |
+            <a href="https://example.com/your-video-link" target="_blank" rel="noopener">Project video</a>
+        </p>
+    </footer>
+</body>
+
+</html>

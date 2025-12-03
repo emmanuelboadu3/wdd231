@@ -1,0 +1,258 @@
+[
+    {
+        "id": 1,
+        "title": "Intro to HTML",
+        "description": "Learn basic tags, structure, and semantics.",
+        "difficulty": "Beginner",
+        "category": "HTML",
+        "duration": "20 min",
+        "featured": true,
+        "link": "https://example.com/html-intro",
+        "image": "images/html1.webp",
+        "tags": [
+            "html",
+            "semantics",
+            "beginner"
+        ]
+    },
+    {
+        "id": 2,
+        "title": "Semantic HTML Essentials",
+        "description": "Header, nav, main, article, section, and footer.",
+        "difficulty": "Beginner",
+        "category": "HTML",
+        "duration": "25 min",
+        "featured": true,
+        "link": "https://example.com/html-semantic",
+        "image": "images/html2.webp",
+        "tags": [
+            "html",
+            "structure",
+            "accessibility"
+        ]
+    },
+    {
+        "id": 3,
+        "title": "CSS Selectors 101",
+        "description": "Class, ID, attribute, pseudo-class, and specificity.",
+        "difficulty": "Beginner",
+        "category": "CSS",
+        "duration": "30 min",
+        "featured": true,
+        "link": "https://example.com/css-selectors",
+        "image": "images/css1.webp",
+        "tags": [
+            "css",
+            "selectors",
+            "beginner"
+        ]
+    },
+    {
+        "id": 4,
+        "title": "Flexbox Fundamentals",
+        "description": "Layout with flex containers and alignment.",
+        "difficulty": "Beginner",
+        "category": "CSS",
+        "duration": "35 min",
+        "featured": false,
+        "link": "https://example.com/css-flexbox",
+        "image": "images/css2.webp",
+        "tags": [
+            "css",
+            "flexbox",
+            "layout"
+        ]
+    },
+    {
+        "id": 5,
+        "title": "CSS Grid Basics",
+        "description": "Track sizing, areas, and responsive grids.",
+        "difficulty": "Intermediate",
+        "category": "CSS",
+        "duration": "40 min",
+        "featured": true,
+        "link": "https://example.com/css-grid",
+        "image": "images/css3.webp",
+        "tags": [
+            "css",
+            "grid",
+            "responsive"
+        ]
+    },
+    {
+        "id": 6,
+        "title": "Responsive Design",
+        "description": "Mobile-first, media queries, and fluid units.",
+        "difficulty": "Intermediate",
+        "category": "CSS",
+        "duration": "45 min",
+        "featured": false,
+        "link": "https://example.com/css-responsive",
+        "image": "images/css4.webp",
+        "tags": [
+            "css",
+            "responsive",
+            "mobile-first"
+        ]
+    },
+    {
+        "id": 7,
+        "title": "Accessibility Basics",
+        "description": "Semantics, ARIA, focus, and color contrast.",
+        "difficulty": "Beginner",
+        "category": "Accessibility",
+        "duration": "30 min",
+        "featured": true,
+        "link": "https://example.com/a11y-basics",
+        "image": "images/a11y1.webp",
+        "tags": [
+            "accessibility",
+            "aria",
+            "contrast"
+        ]
+    },
+    {
+        "id": 8,
+        "title": "JavaScript Syntax",
+        "description": "Variables, types, operators, and control flow.",
+        "difficulty": "Beginner",
+        "category": "JavaScript",
+        "duration": "35 min",
+        "featured": false,
+        "link": "https://example.com/js-syntax",
+        "image": "images/js1.webp",
+        "tags": [
+            "javascript",
+            "syntax",
+            "beginner"
+        ]
+    },
+    {
+        "id": 9,
+        "title": "DOM Fundamentals",
+        "description": "Selecting nodes, events, and manipulation.",
+        "difficulty": "Beginner",
+        "category": "JavaScript",
+        "duration": "40 min",
+        "featured": true,
+        "link": "https://example.com/js-dom",
+        "image": "images/js2.webp",
+        "tags": [
+            "javascript",
+            "dom",
+            "events"
+        ]
+    },
+    {
+        "id": 10,
+        "title": "Fetch API 101",
+        "description": "Async requests, JSON parsing, and error handling.",
+        "difficulty": "Intermediate",
+        "category": "JavaScript",
+        "duration": "40 min",
+        "featured": true,
+        "link": "https://example.com/js-fetch",
+        "image": "images/js3.webp",
+        "tags": [
+            "javascript",
+            "fetch",
+            "async"
+        ]
+    },
+    {
+        "id": 11,
+        "title": "Array Methods Deep Dive",
+        "description": "map, filter, reduce, forEach, find.",
+        "difficulty": "Intermediate",
+        "category": "JavaScript",
+        "duration": "50 min",
+        "featured": false,
+        "link": "https://example.com/js-array-methods",
+        "image": "images/js4.webp",
+        "tags": [
+            "javascript",
+            "arrays",
+            "functional"
+        ]
+    },
+    {
+        "id": 12,
+        "title": "Template Literals",
+        "description": "Interpolation, multi-line strings, and tags.",
+        "difficulty": "Beginner",
+        "category": "JavaScript",
+        "duration": "25 min",
+        "featured": false,
+        "link": "https://example.com/js-template-literals",
+        "image": "images/js5.webp",
+        "tags": [
+            "javascript",
+            "strings",
+            "template"
+        ]
+    },
+    {
+        "id": 13,
+        "title": "ES Modules",
+        "description": "import/export, organization, and bundling basics.",
+        "difficulty": "Intermediate",
+        "category": "JavaScript",
+        "duration": "35 min",
+        "featured": true,
+        "link": "https://example.com/js-esmodules",
+        "image": "images/js6.webp",
+        "tags": [
+            "javascript",
+            "modules",
+            "import-export"
+        ]
+    },
+    {
+        "id": 14,
+        "title": "LocalStorage Patterns",
+        "description": "Persist user preferences and app state.",
+        "difficulty": "Intermediate",
+        "category": "JavaScript",
+        "duration": "30 min",
+        "featured": false,
+        "link": "https://example.com/js-localstorage",
+        "image": "images/js7.webp",
+        "tags": [
+            "javascript",
+            "localstorage",
+            "state"
+        ]
+    },
+    {
+        "id": 15,
+        "title": "Building a Modal",
+        "description": "Accessible dialogs with keyboard support.",
+        "difficulty": "Beginner",
+        "category": "UI",
+        "duration": "30 min",
+        "featured": true,
+        "link": "https://example.com/ui-modal",
+        "image": "images/ui1.webp",
+        "tags": [
+            "ui",
+            "modal",
+            "accessibility"
+        ]
+    },
+    {
+        "id": 16,
+        "title": "Performance Basics",
+        "description": "Optimize images, lazy loading, and CSS hygiene.",
+        "difficulty": "Intermediate",
+        "category": "Performance",
+        "duration": "40 min",
+        "featured": false,
+        "link": "https://example.com/perf-basics",
+        "image": "images/perf1.webp",
+        "tags": [
+            "performance",
+            "optimization",
+            "lazy-loading"
+        ]
+    }
+]

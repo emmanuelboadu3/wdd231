@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Practice coding challenges on CodeStart Tutorials.">
+    <meta name="author" content="Emmanuel Boadu">
+    <title>Practice — CodeStart</title>
+
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <script type="module" src="scripts/main.js" defer></script>
+</head>
+
+<body>
+    <header class="site-header">
+
+        <div class="logo-title">
+            <img src="images/logo.svg" alt="CodeStart Tutorials" class="logo" width="60" height="60" fetchpriority="high"
+                loading="eager">
+            <h1>CodeStart Tutorials</h1>
+        </div>
+        <nav id="primary-nav" class="primary-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tutorials.html">Tutorials</a></li>
+                <li><a href="practice.html" class="active">Practice</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h1>Practice Challenges</h1>
+            <p>Try interactive coding exercises to reinforce your learning.</p>
+
+            <form id="practice-form">
+                <label for="challenge">Select Challenge:</label>
+                <select id="challenge">
+                    <option value="html">HTML Basics</option>
+                    <option value="css">CSS Basics</option>
+                    <option value="js">JavaScript Basics</option>
+                </select>
+                <button type="submit">Start Challenge</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; <span id="year"></span> CodeStart Tutorials. Built by Emmanuel Boadu.</p>
+        <p>
+            <a href="attribution.html">Attributions</a> |
+            <a href="https://example.com/your-video-link" target="_blank">Demo Video</a>
+        </p>
+    </footer>
+</body>
+
+</html>

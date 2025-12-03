@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CodeStart Tutorials — Beginner-friendly HTML, CSS, and JavaScript tutorials.">
+  <meta name="author" content="Emmanuel Boadu">
+  <title>CodeStart Tutorials — Learn HTML, CSS & JS</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;700&display=swap"
+    rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/large.css">
+
+  <!-- JS -->
+  <script type="module" src="scripts/main.js" defer></script>
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header class="site-header">
+  
+    <div class="logo-title">
+      <img src="images/logo.svg" alt="CodeStart Tutorials" class="logo" width="60" height="60" fetchpriority="high"
+        loading="eager">
+      <h1>CodeStart Tutorials</h1>
+    </div>
+    <nav id="primary-nav" class="primary-nav">
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="tutorials.html">Tutorials</a></li>
+        <li><a href="practice.html">Practice</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main>
+    <section class="intro">
+      <h1>Start Coding with Confidence</h1>
+      <p>Learn HTML, CSS, and JavaScript with beginner-friendly tutorials and interactive exercises.</p>
+    </section>
+
+    <section class="featured-tutorials">
+      <h2>Featured Tutorials</h2>
+      <div id="featured-list" class="cards">
+
+        <!-- JS will inject featured tutorials here -->
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> CodeStart Tutorials. Built by Emmanuel Boadu.</p>
+    <p>
+      <a href="attribution.html">Attributions</a> |
+      <a href="https://example.com/your-video-link" target="_blank" rel="noopener">Project video</a>
+    </p>
+    <div class="social">
+      <a href="https://github.com/emmanuelboadu3" target="_blank">
+        <img src="images/github.svg" alt="GitHub" width="16">
+      </a>
+      <a href="https://linkedin.com/in/emmanuel-boadu-2681842a6" target="_blank">
+        <img src="images/linkedin-square.svg" alt="LinkedIn" width="16">
+      </a>
+      <a href="https://instagram.com/kojo_barjona19" target="_blank">
+        <img src="images/instagram-circle.svg" alt="Instagram" width="16">
+      </a>
+      <a href="https://facebook.com/share/1APo2Pr2dP/" target="_blank">
+        <img src="images/facebook.svg" alt="Facebook" width="16">
+      </a>
+    </div>
+    <div class="developer-info">
+      <p>Developed by Emmanuel Boadu | WDD 231</p>
+      <p>Last Modified: <span id="lastModified"></span></p>
+    </div>
+  </footer>
+
+</body>
+
+</html>
