@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Suggest a tutorial — CodeStart</title>
+    <meta name="description" content="Suggest a tutorial idea to improve CodeStart.">
+    <meta name="author" content="Emmanuel Boadu">
+
+    <link rel="icon" href="favicon.ico">
+
+    <meta property="og:title" content="Suggest a tutorial — CodeStart">
+    <meta property="og:description" content="Submit your tutorial ideas.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourusername.github.io/wdd231/finalproject/form.html">
+    <meta property="og:image" content="images/og-cover.jpg">
+
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+   
+
+</head>
+
+<body>
+    <header>
+        <nav class="site-nav">
+            <div class="brand-logo">
+                <a href="#">
+                    <img src="images/logo.svg" alt="CodeStart Tutorials logo" class="logo">
+                    <span class="brand">CodeStart Tutorials</span>
+                </a>
+            </div>
+    
+            <button id="menu-btn" aria-expanded="false" aria-controls="primary-menu" aria-label="Toggle menu"></button>
+    
+            <ul id="primary-menu" class="menu" data-state="closed">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tutorials.html">Tutorials</a></li>
+                <li><a href="practice.html">Practice</a></li>
+                <li><a href="form.html" aria-current="page">Suggest</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+
+    <main>
+        <section class="page-header">
+            <h1>Suggest a tutorial</h1>
+            <p>Share an idea to help new learners.</p>
+        </section>
+
+        <section>
+            <form action="thankyou.html" method="get" novalidate class="suggest-form">
+            
+                <label>First Name
+                    <input name="firstName" autocomplete="given-name" required>
+                </label>
+            
+                <label>Last Name
+                    <input name="lastName" autocomplete="family-name" required>
+                </label>
+            
+                <label>Email
+                    <input type="email" name="email" autocomplete="email" placeholder="example@gmail.com"
+                        title="Enter a valid email address" required>
+                </label>
+            
+                <label>Mobile Phone
+                    <input name="mobile" type="tel" placeholder="+233111111" title="Enter a valid mobile number"
+                        pattern="^\+?[0-9]{10,15}$" required>
+                </label>
+            
+                <label>Language
+                    <select name="language" required>
+                        <option value="">Choose…</option>
+                        <option>HTML</option>
+                        <option>CSS</option>
+                        <option>JavaScript</option>
+                    </select>
+                </label>
+            
+                <label>Difficulty
+                    <select name="difficulty" required>
+                        <option value="">Choose…</option>
+                        <option>beginner</option>
+                        <option>intermediate</option>
+                    </select>
+                </label>
+            
+                <label>Idea Title
+                    <input name="title" required>
+                </label>
+            
+                <label>Short Description
+                    <textarea name="description" rows="4" required></textarea>
+                </label>
+            
+                <button type="submit" class="btn">Submit</button>
+            
+            </form>
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="social">
+            <a href="https://github.com/emmanuelboadu3" target="_blank">
+                <img src="images/github.svg" alt="GitHub" width="16">
+            </a>
+            <a href="https://linkedin.com/in/emmanuel-boadu-2681842a6" target="_blank">
+                <img src="images/linkedin-square.svg" alt="LinkedIn" width="16">
+            </a>
+            <a href="https://instagram.com/kojo_barjona19" target="_blank">
+                <img src="images/instagram-circle.svg" alt="Instagram" width="16">
+            </a>
+            <a href="https://facebook.com/share/1APo2Pr2dP/" target="_blank">
+                <img src="images/facebook.svg" alt="Facebook" width="16">
+            </a>
+        </div>
+        
+        <div class="developer-info">
+            <p>Developed by Emmanuel Boadu | WDD 231</p>
+            <p>&copy; <span id="year"></span> | Last Modified: <span id="lastModified"></span></p>
+        </div>
+        <p><a href="attributions.html">Attributions</a> · <a href="https://www.loom.com/share/86d642cfc93d46a9949d53d83df9388a" target="_blank"
+                rel="noopener">Video demo</a></p>
+    </footer>
+    <script type="module" src="scripts/index.js"></script>
+    <script src="scripts/footer.js" defer></script>
+
+</body>
+
+</html>

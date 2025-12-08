@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tutorials — CodeStart Tutorials</title>
+    <meta name="description"
+        content="Browse all tutorials for HTML, CSS, and JavaScript with filters and saved favorites.">
+    <meta name="author" content="Emmanuel Boadu">
+
+    <link rel="icon" href="favicon.ico">
+    <meta property="og:title" content="Tutorials — CodeStart">
+    <meta property="og:description"
+        content="Filter tutorials by language and difficulty, view details in a modal, and save favorites.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourusername.github.io/wdd231/finalproject/tutorials.html">
+    <meta property="og:image" content="images/og-cover.jpg">
+
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+</head>
+
+<body>
+    <header>
+        <nav class="site-nav">
+            <div class="brand-logo">
+                <a href="#">
+                    <img src="images/logo.svg" alt="CodeStart Tutorials logo" class="logo">
+                    <span class="brand">CodeStart Tutorials</span>
+                </a>
+            </div>
+    
+            <button id="menu-btn" aria-expanded="false" aria-controls="primary-menu" aria-label="Toggle menu"></button>
+    
+            <ul id="primary-menu" class="menu" data-state="closed">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tutorials.html" aria-current="page">Tutorials</a></li>
+                <li><a href="practice.html">Practice</a></li>
+                <li><a href="form.html">Suggest</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <h1>Tutorials</h1>
+            <p>Filter by language and difficulty. Click Details to preview content.</p>
+
+            <form class="filters" aria-label="Filters">
+                <label>Language
+                    <select id="filter-lang">
+                        <option value="all">All</option>
+                        <option value="HTML">HTML</option>
+                        <option value="CSS">CSS</option>
+                        <option value="JavaScript">JavaScript</option>
+                    </select>
+                </label>
+                <label>Difficulty
+                    <select id="filter-diff">
+                        <option value="all">All</option>
+                        <option value="beginner">Beginner</option>
+                        <option value="intermediate">Intermediate</option>
+                    </select>
+                </label>
+            </form>
+        </section>
+
+        <section>
+            <div class="grid" id="tutorials-grid" aria-live="polite"></div>
+        </section>
+
+        <div class="modal" id="item-modal" aria-hidden="true" role="dialog" aria-labelledby="modal-title"
+            aria-modal="true">
+            <div class="modal-backdrop" data-close></div>
+            <div class="modal-content" tabindex="-1">
+                <button class="modal-close" aria-label="Close" data-close>×</button>
+                <h2 id="modal-title"></h2>
+                <img id="modal-image" src="images/placeholder.webp" alt="Modal image" loading="lazy" width="640" height="360">
+
+                <p id="modal-desc"></p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="social">
+            <a href="https://github.com/emmanuelboadu3" target="_blank">
+                <img src="images/github.svg" alt="GitHub" width="16">
+            </a>
+            <a href="https://linkedin.com/in/emmanuel-boadu-2681842a6" target="_blank">
+                <img src="images/linkedin-square.svg" alt="LinkedIn" width="16">
+            </a>
+            <a href="https://instagram.com/kojo_barjona19" target="_blank">
+                <img src="images/instagram-circle.svg" alt="Instagram" width="16">
+            </a>
+            <a href="https://facebook.com/share/1APo2Pr2dP/" target="_blank">
+                <img src="images/facebook.svg" alt="Facebook" width="16">
+            </a>
+        </div>
+        
+        <div class="developer-info">
+            <p>Developed by Emmanuel Boadu | WDD 231</p>
+            <p>&copy; <span id="year"></span> | Last Modified: <span id="lastModified"></span></p>
+        </div>
+        <p><a href="attributions.html">Attributions</a> · <a href="https://www.loom.com/share/86d642cfc93d46a9949d53d83df9388a" target="_blank"
+                rel="noopener">Video demo</a></p>
+    </footer>
+    <script type="module" src="scripts/tutorials.js"></script>
+    <script src="scripts/footer.js" defer></script>
+</body>
+
+</html>

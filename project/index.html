@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CodeStart Tutorials — Learn HTML, CSS, and JavaScript</title>
+    <meta name="description"
+        content="Beginner-friendly tutorials and practice challenges for HTML, CSS, and JavaScript with interactive examples, saved progress, and sharing.">
+    <meta name="author" content="Emmanuel Boadu">
+
+    <!-- Favicon/manifest -->
+    <link rel="icon" href="favicon.ico">
+    
+
+    <!-- Social meta -->
+    <meta property="og:title" content="CodeStart Tutorials">
+    <meta property="og:description" content="Learn HTML, CSS, and JavaScript step-by-step with interactive practice.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourusername.github.io/wdd231/finalproject/">
+    <meta property="og:image" content="images/og-cover.jpg">
+
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+    
+</head>
+
+<body>
+    <header>
+        <nav class="site-nav">
+            <div class="brand-logo">
+                <a href="#">
+                    <img src="images/logo.svg" alt="CodeStart Tutorials logo" class="logo">
+                    <span class="brand">CodeStart Tutorials</span>
+                </a>
+            </div>
+    
+            <button id="menu-btn" aria-expanded="false" aria-controls="primary-menu" aria-label="Toggle menu"></button>
+            <ul id="primary-menu" class="menu" data-state="closed">
+                <li><a href="index.html" aria-current="page">Home</a></li>
+                <li><a href="tutorials.html">Tutorials</a></li>
+                <li><a href="practice.html">Practice</a></li>
+                <li><a href="form.html">Suggest</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <img src="images/og.image.webp" alt="Hero image of CodesStart Tutorials">
+            <div class="hero-text">
+            <div class="hero-content">
+                <h1>CodeStart Tutorials</h1>
+                <p>Learn HTML, CSS, and JavaScript in a simple, interactive way. Save your favorites and track progress as you
+                    go.</p>
+                <p><a class="btn" href="tutorials.html">Start learning</a></p>
+            </div>
+            </div>
+        </section>
+
+
+        <section class="features">
+            <h2>What you’ll find here</h2>
+            <div class="grid">
+                <article class="card">
+                    <h3>HTML basics</h3>
+                    <p>Semantic markup, structure, accessibility-first thinking.</p>
+                </article>
+                <article class="card">
+                    <h3>CSS styling</h3>
+                    <p>Layout, typography, responsive design without frameworks.</p>
+                </article>
+                <article class="card">
+                    <h3>JavaScript essentials</h3>
+                    <p>DOM, events, fetch, modules, localStorage, and modals.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="scenarios">
+            <h2>Common questions</h2>
+            <ul>
+                <li>How do I create a simple webpage using HTML and CSS?</li>
+                <li>Where can I practice JavaScript exercises online?</li>
+                <li>How do I combine HTML, CSS, and JavaScript in a single project?</li>
+            </ul>
+        </section>
+
+        <section class="weather">
+            <div class="weather-card local-weather">
+                <div class="card-header">Local Weather</div>
+                <div class="card-body" id="weather-container">
+                    <!-- JS will populate current weather here -->
+                </div>
+            </div>
+        
+            <div class="weather-card forecast-weather">
+                <div class="card-header">Weather Forecast</div>
+                <div class="card-body" id="forecast-container">
+                    <!-- JS will populate forecast here -->
+                </div>
+            </div>
+        </section>
+
+
+
+      
+
+        <!-- Accessible modal for details -->
+        <div class="modal" id="item-modal" aria-hidden="true" role="dialog" aria-labelledby="modal-title">
+            <div class="modal-backdrop" data-close></div>
+            <div class="modal-content" tabindex="-1">
+                <button class="modal-close" aria-label="Close" data-close>×</button>
+                <h2 id="modal-title"></h2>
+                <img id="modal-image" src="images/placeholder.webp" alt="Modal image" loading="lazy" width="640" height="360">
+                <p id="modal-desc"></p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="social">
+            <a href="https://github.com/emmanuelboadu3" target="_blank">
+                <img src="images/github.svg" alt="GitHub" width="16">
+            </a>
+            <a href="https://linkedin.com/in/emmanuel-boadu-2681842a6" target="_blank">
+                <img src="images/linkedin-square.svg" alt="LinkedIn" width="16">
+            </a>
+            <a href="https://instagram.com/kojo_barjona19" target="_blank">
+                <img src="images/instagram-circle.svg" alt="Instagram" width="16">
+            </a>
+            <a href="https://facebook.com/share/1APo2Pr2dP/" target="_blank">
+                <img src="images/facebook.svg" alt="Facebook" width="16">
+            </a>
+        </div>
+        
+        <div class="developer-info">
+            <p>Developed by Emmanuel Boadu | WDD 231</p>
+            <p>&copy; <span id="year"></span> | Last Modified: <span id="lastModified"></span></p>
+        </div>
+        <p><a href="attributions.html">Attributions</a> · <a href="https://www.loom.com/share/86d642cfc93d46a9949d53d83df9388a" target="_blank"
+                rel="noopener">Video demo</a></p>
+    </footer>
+    <script type="module" src="scripts/index.js"></script>
+    <script src="scripts/footer.js" defer></script>
+</body>
+
+</html>

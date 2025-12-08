@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About — CodeStart Tutorials</title>
+    <meta name="description"
+        content="About CodeStart Tutorials: purpose, accessibility, performance budget, and project details.">
+    <meta name="author" content="Emmanuel Boadu">
+
+    <link rel="icon" href="favicon.ico">
+
+    <meta property="og:title" content="About — CodeStart">
+    <meta property="og:description"
+        content="Purpose, accessibility and performance guardrails for a beginner-friendly learning experience.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourusername.github.io/wdd231/finalproject/about.html">
+    <meta property="og:image" content="images/og-cover.jpg">
+
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+</head>
+
+<body>
+    <header>
+        <nav class="site-nav">
+            <div class="brand-logo">
+                <a href="#">
+                    <img src="images/logo.svg" alt="CodeStart Tutorials logo" class="logo">
+                    <span class="brand">CodeStart Tutorials</span>
+                </a>
+            </div>
+
+            <button id="menu-btn" aria-expanded="false" aria-controls="primary-menu" aria-label="Toggle menu"></button>
+
+            <ul id="primary-menu" class="menu" data-state="closed">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tutorials.html">Tutorials</a></li>
+                <li><a href="practice.html">Practice</a></li>
+                <li><a href="form.html">Suggest</a></li>
+                <li><a href="about.html" aria-current="page">About</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <h1>About CodeStart Tutorials</h1>
+        </section>
+
+        <section>
+            <h2>Purpose</h2>
+            <p>CodeStart is designed to teach beginners HTML, CSS, and JavaScript with clear explanations,
+                interactive exercises, and accessible patterns.</p>
+        </section>
+
+        <section>
+            <h2>Accessibility</h2>
+            <ul>
+                <li>Semantic headings and landmarks (header, nav, main, footer).</li>
+                <li>Keyboard-friendly navigation and modals (Escape closes, focus managed).</li>
+                <li>Color contrast meets WCAG AA; visible focus states.</li>
+                <li>Images use alt text and intrinsic size to avoid layout shift.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Performance budget</h2>
+            <ul>
+                <li>Each page loads under 500 kB from an empty cache.</li>
+                <li>Images compressed and lazy-loaded; JS deferred; CSS minimal.</li>
+                <li>No frameworks; ES modules; cache-friendly assets.</li>
+            </ul>
+        </section>
+
+        <!-- ===== Clean 3-box layout ===== -->
+        <section class="about-info">
+            <div class="info-grid">
+
+                <!-- Left: Highlights -->
+                <div class="info-box orange">
+                    <h2>Page Highlights</h2>
+                    <ul>
+                        <li>Learn why CodeStart is beginner-friendly</li>
+                        <li>Understand accessibility & performance practices</li>
+                        <li>See the purpose and scope of the project</li>
+                    </ul>
+                </div>
+
+                <!-- Middle: Developer Info -->
+                <div class="info-box green">
+                    <h2>Developer Info</h2>
+                    <p>This project was created by Emmanuel Boadu as part of WDD 231.
+                        It demonstrates semantic HTML, clean CSS, responsive layouts, and modular JavaScript.</p>
+                </div>
+
+                <!-- Right: Project Summary -->
+                <div class="info-box blue">
+                    <h2>Project Summary</h2>
+                    <p>CodeStart Tutorials provides structured learning for HTML, CSS, and JavaScript with easy
+                        examples, practical practice tasks, and accessible design choices.</p>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="social">
+            <a href="https://github.com/emmanuelboadu3" target="_blank">
+                <img src="images/github.svg" alt="GitHub" width="20">
+            </a>
+            <a href="https://linkedin.com/in/emmanuel-boadu-2681842a6" target="_blank">
+                <img src="images/linkedin-square.svg" alt="LinkedIn" width="20">
+            </a>
+            <a href="https://instagram.com/kojo_barjona19" target="_blank">
+                <img src="images/instagram-circle.svg" alt="Instagram" width="20">
+            </a>
+            <a href="https://facebook.com/share/1APo2Pr2dP/" target="_blank">
+                <img src="images/facebook.svg" alt="Facebook" width="20">
+            </a>
+        </div>
+
+        <div class="developer-info">
+            <p>Developed by Emmanuel Boadu | WDD 231</p>
+            <p>&copy; <span id="year"></span> | Last Modified: <span id="lastModified"></span></p>
+        </div>
+        <p><a href="attributions.html">Attributions</a> · <a href="https://www.loom.com/share/86d642cfc93d46a9949d53d83df9388a" target="_blank"
+                rel="noopener">Video demo</a></p>
+    </footer>
+
+    <script type="module" src="scripts/index.js"></script>
+    <script src="scripts/footer.js" defer></script>
+
+</body>
+
+</html>

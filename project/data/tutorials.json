@@ -1,0 +1,257 @@
+[
+    {
+        "id": "html-structure",
+        "title": "HTML Structure and Semantics",
+        "language": "HTML",
+        "difficulty": "beginner",
+        "duration": "20 min",
+        "thumbnail": "images/html-structure-320.webp",
+        "image": "images/html-structure-640.webp",
+        "description": [
+            "Create a document skeleton: <!doctype html>, <html>, <head>, and <body>.",
+            "Use semantic elements: <header>, <nav>, <main>, <section>, <article>, and <footer> to describe page regions.",
+            "Choose headings in order (h1 → h2 → h3) to reflect hierarchy and improve screen-reader navigation.",
+            "Group related content with lists (<ul>, <ol>) and use <p> for paragraphs.",
+            "Add landmarks and skip links (e.g., <a href=\"#main\">Skip to main</a>) to help keyboard users."
+        ],
+        "practice": "Build a semantic homepage with header, nav, main, and footer."
+    },
+    {
+        "id": "html-forms",
+        "title": "Accessible HTML Forms",
+        "language": "HTML",
+        "difficulty": "beginner",
+        "duration": "25 min",
+        "thumbnail": "images/html-forms-320.webp",
+        "image": "images/html-forms-640.webp",
+        "description": [
+            "Wrap each input with a <label> or use for/id so labels are programmatically associated.",
+            "Mark required fields clearly (aria-required or required attribute) and provide helper text using <small> or aria-describedby.",
+            "Group related controls with <fieldset> and <legend> (e.g., radio groups).",
+            "Validate input on the client (type, pattern, required) and show clear inline error messages.",
+            "Ensure keyboard and screen-reader access: focus order, logical tabbing, and descriptive button text."
+        ],
+        "practice": "Create a contact form with required fields and descriptive labels."
+    },
+    {
+        "id": "css-selectors",
+        "title": "CSS Selectors and Specificity",
+        "language": "CSS",
+        "difficulty": "beginner",
+        "duration": "20 min",
+        "thumbnail": "images/css-selectors-320.webp",
+        "image": "images/css-selectors-640.webp",
+        "description": [
+            "Target elements with type selectors (e.g., p), class selectors (.card), and ID selectors (#main).",
+            "Combine selectors with descendants, child (>) and sibling (+, ~) combinators for precision.",
+            "Use attribute selectors (input[type=\"text\"]) for specific control styling.",
+            "Understand specificity: inline > ID > class > type — avoid overusing IDs for styling.",
+            "Keep rules modular: prefer classes and small, reusable selectors to minimize conflicts."
+        ],
+        "practice": "Style a card list using class selectors and avoid overrides."
+    },
+    {
+        "id": "css-flexbox",
+        "title": "Layout with Flexbox",
+        "language": "CSS",
+        "difficulty": "beginner",
+        "duration": "30 min",
+        "thumbnail": "images/css-flexbox-320.webp",
+        "image": "images/css-flexbox-640.webp",
+        "description": [
+            "Make a container a flex context: .container { display: flex; }.",
+            "Use justify-content to control horizontal distribution (flex-start, center, space-between).",
+            "Use align-items to control vertical alignment (stretch, center, baseline).",
+            "Allow wrapping when needed: flex-wrap: wrap; and control item widths with flex-basis or flex properties.",
+            "Use gap to create consistent spacing between flex items instead of margins."
+        ],
+        "practice": "Build a responsive nav and feature grid with Flexbox."
+    },
+    {
+        "id": "css-grid",
+        "title": "Responsive CSS Grid",
+        "language": "CSS",
+        "difficulty": "intermediate",
+        "duration": "35 min",
+        "thumbnail": "images/css-grid-320.webp",
+        "image": "images/css-grid-640.webp",
+        "description": [
+            "Define a grid container: .grid { display: grid; grid-template-columns: repeat(3, 1fr); }.",
+            "Use grid-template-areas or named lines for semantic placement of regions.",
+            "Use repeat(), minmax(), and auto-fit/auto-fill for responsive column behavior.",
+            "Place items with grid-column and grid-row, or by assigning areas to children.",
+            "Combine media queries with grid changes to collapse columns on smaller screens."
+        ],
+        "practice": "Create a 3-column layout that collapses to 1 column on mobile."
+    },
+    {
+        "id": "css-typography",
+        "title": "Web Typography and Readability",
+        "language": "CSS",
+        "difficulty": "beginner",
+        "duration": "20 min",
+        "thumbnail": "images/css-typography-320.webp",
+        "image": "images/css-typography-640.webp",
+        "description": [
+            "Define a readable base font-size and line-height: body { font-size: 16px; line-height: 1.5; }.",
+            "Choose font stacks with fallbacks and prefer system fonts for performance.",
+            "Control line length (measure) by constraining container width for readability (50–75 characters).",
+            "Use relative units (rem, em) for scalable typography and responsive adjustments.",
+            "Ensure sufficient color contrast between text and background for accessibility."
+        ],
+        "practice": "Style headings and body text for a blog page."
+    },
+    {
+        "id": "js-basics",
+        "title": "JavaScript Basics",
+        "language": "JavaScript",
+        "difficulty": "beginner",
+        "duration": "30 min",
+        "thumbnail": "images/js-basics-320.webp",
+        "image": "images/js-basics-640.webp",
+        "description": [
+            "Declare variables using let and const and pick the correct one for mutability.",
+            "Work with data types (string, number, boolean, object, array) and convert types when needed.",
+            "Control flow with conditionals (if/else, switch) and loops (for, while, forEach).",
+            "Write small, single-purpose functions that accept inputs and return outputs.",
+            "Test behavior in the console and use console.log to inspect values during development."
+        ],
+        "practice": "Write a function that formats a user’s name for display."
+    },
+    {
+        "id": "js-dom",
+        "title": "DOM Manipulation and Events",
+        "language": "JavaScript",
+        "difficulty": "beginner",
+        "duration": "35 min",
+        "thumbnail": "images/js-dom-320.webp",
+        "image": "images/js-dom-640.webp",
+        "description": [
+            "Select elements: document.querySelector and document.querySelectorAll for single/multiple nodes.",
+            "Change content and attributes with textContent, innerHTML, setAttribute, and classList methods.",
+            "Attach event listeners using element.addEventListener('click', handler) and remove when not needed.",
+            "Prevent default behavior when necessary and use event delegation for many similar elements.",
+            "Keep UI updates separate from data logic and minimize DOM writes for performance."
+        ],
+        "practice": "Build a toggle menu and update content on button clicks."
+    },
+    {
+        "id": "js-fetch",
+        "title": "Fetch API and JSON",
+        "language": "JavaScript",
+        "difficulty": "intermediate",
+        "duration": "30 min",
+        "thumbnail": "images/js-fetch-320.webp",
+        "image": "images/js-fetch-640.webp",
+        "description": [
+            "Use fetch() with async/await to request resources: const res = await fetch(url).",
+            "Check the response: if (!res.ok) throw an error to handle HTTP failures.",
+            "Parse JSON: const data = await res.json() and validate the shape before use.",
+            "Wrap calls in try/catch and show user-friendly error messages when requests fail.",
+            "Avoid blocking the UI: show loading indicators and handle slow networks gracefully."
+        ],
+        "practice": "Load a local JSON file and render items into cards."
+    },
+    {
+        "id": "js-localstorage",
+        "title": "LocalStorage for State",
+        "language": "JavaScript",
+        "difficulty": "intermediate",
+        "duration": "25 min",
+        "thumbnail": "images/js-localstorage-320.webp",
+        "image": "images/js-localstorage-640.webp",
+        "description": [
+            "Save structured data using JSON: localStorage.setItem('key', JSON.stringify(value)).",
+            "Restore state at load: const value = JSON.parse(localStorage.getItem('key') || '[]').",
+            "Keep stored payloads small and only persist what’s necessary (IDs, settings, not large blobs).",
+            "Update storage on user actions and ensure changes are reflected in the UI immediately.",
+            "Consider expirations or versioning for stored data to handle schema changes."
+        ],
+        "practice": "Save and restore a favorites list across reloads."
+    },
+    {
+        "id": "js-modules",
+        "title": "ES Modules and Organization",
+        "language": "JavaScript",
+        "difficulty": "intermediate",
+        "duration": "25 min",
+        "thumbnail": "images/js-modules-320.webp",
+        "image": "images/js-modules-640.webp",
+        "description": [
+            "Break code into focused modules (api, dom, storage, modal) each with a single responsibility.",
+            "Export only what’s needed: export function or export default for the main entry.",
+            "Import named exports with matching names and default exports with any name you choose.",
+            "Prefer pure functions and avoid shared mutable state between modules when possible.",
+            "Use a module-aware server (or type=\"module\" script) and test imports in the browser."
+        ],
+        "practice": "Refactor monolithic script into modules: api, dom, modal."
+    },
+    {
+        "id": "accessibility",
+        "title": "Accessibility Essentials",
+        "language": "HTML",
+        "difficulty": "intermediate",
+        "duration": "30 min",
+        "thumbnail": "images/access-320.webp",
+        "image": "images/access-640.webp",
+        "description": [
+            "Provide clear semantic structure and programmatic labels for controls (labels, aria-labels).",
+            "Manage focus order and trap focus inside modals; return focus to the trigger on close.",
+            "Ensure keyboard accessibility for all interactive elements and visible focus styles.",
+            "Use ARIA only when native HTML cannot express the semantics needed; prefer native elements.",
+            "Test with a screen reader and keyboard-only navigation to catch real-world issues."
+        ],
+        "practice": "Build a modal with focus management and Escape to close."
+    },
+    {
+        "id": "performance",
+        "title": "Performance Basics",
+        "language": "CSS",
+        "difficulty": "intermediate",
+        "duration": "25 min",
+        "thumbnail": "images/perf-320.webp",
+        "image": "images/perf-640.webp",
+        "description": [
+            "Measure first: use DevTools to identify large assets and slow network requests.",
+            "Optimize images (use webp, responsive sizes, and set width/height attributes).",
+            "Defer noncritical scripts and use async/defer for JavaScript to avoid blocking rendering.",
+            "Minimize CSS and avoid large render-blocking stylesheets; prefer critical CSS for above-the-fold.",
+            "Cache resources and use long cache lifetimes for static assets where possible."
+        ],
+        "practice": "Keep a homepage under 500 kB and measure in DevTools."
+    },
+    {
+        "id": "seo",
+        "title": "SEO and Social Metadata",
+        "language": "HTML",
+        "difficulty": "beginner",
+        "duration": "20 min",
+        "thumbnail": "images/seo-320.webp",
+        "image": "images/seo-640.webp",
+        "description": [
+            "Write a clear, unique <title> and <meta name=\"description\"> for each page.",
+            "Include Open Graph metadata (og:title, og:description, og:image) for rich sharing previews.",
+            "Use semantic headings and meaningful URLs (slugged, human-readable).",
+            "Provide alt text for images and structured data where applicable (JSON-LD).",
+            "Keep content focused and accessible—search engines favor usability and clarity."
+        ],
+        "practice": "Add distinct meta descriptions and OG tags for each page."
+    },
+    {
+        "id": "project-build",
+        "title": "Putting It Together",
+        "language": "JavaScript",
+        "difficulty": "intermediate",
+        "duration": "40 min",
+        "thumbnail": "images/project-320.webp",
+        "image": "images/project-640.webp",
+        "description": [
+            "Plan the structure: decide which pages, modules, and components you need.",
+            "Build HTML skeletons and wire up CSS for layout and basic styles.",
+            "Add JavaScript modules to fetch data, render UI, and manage interactions.",
+            "Test responsiveness, accessibility, and performance; iterate based on results.",
+            "Deploy to a static host (GitHub Pages, Netlify) and verify production behavior."
+        ],
+        "practice": "Create a mini site with dynamic content and a form action page."
+    }
+]

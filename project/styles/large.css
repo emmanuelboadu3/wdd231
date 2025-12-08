@@ -1,0 +1,123 @@
+/* ===== Medium screens and up (≥600px) ===== */
+@media (min-width: 600px) {
+
+    /* Show horizontal menu */
+    .menu {
+        position: static;
+        display: flex !important;
+        flex-direction: row;
+        gap: 1rem;
+        padding: 0;
+        background: transparent;
+        border-radius: 0;
+        max-height: none;
+        overflow: visible;
+        justify-content: flex-end;
+    }
+
+    .menu a {
+        padding: 0 1rem;
+        font-size: 1rem;
+        border: none;
+    }
+
+    /* Hide hamburger button */
+    #menu-btn {
+        display: none;
+    }
+
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* ===== Large screens (≥900px) ===== */
+@media (min-width: 900px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .hero {
+        padding: 6rem 2rem;
+    }
+
+    .hero h1 {
+        font-size: 2.75rem;
+    }
+
+    .hero img {
+        max-width: 900px;
+    }
+}
+
+/* ===== Extra-large screens (≥1200px) ===== */
+@media (min-width: 1200px) {
+    .hero img {
+        max-width: 1100px;
+    }
+
+    .hero h1 {
+        font-size: 3rem;
+    }
+}
+
+@media (min-width: 600px) {
+    .brand-logo a {
+        display: flex;
+        align-items: center;
+        gap: 2.5rem;
+        /* more breathing space */
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .brand-logo .brand {
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+
+    .logo {
+        height: 40px;
+    }
+}
+
+/* Medium screens and up (≥600px) */
+@media (min-width: 600px) {
+    .info-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Medium & large screens: side by side, equal height */
+@media (min-width: 768px) {
+    .weather {
+        display: flex;
+        flex-direction: row;
+        gap: 3rem;
+        align-items: stretch;
+        min-width: 100%;
+    }
+
+    .weather-card {
+        flex: 1;
+    }
+}
+
+/* ===== Large screens (≥1024px) ===== */
+@media (min-width: 1024px) {
+    main {
+        display: flex;
+        justify-content: flex-start;
+        /* keep items aligned to the left */
+        align-items: flex-start;
+        padding: 2rem;
+        /* space from top and sides */
+    }
+
+    .suggest-form {
+        width: 600px;
+        /* stretch to the middle */
+        max-width: 800px;
+        /* limit max width */
+    }
+}
