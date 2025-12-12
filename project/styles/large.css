@@ -107,9 +107,7 @@
 @media (min-width: 1024px) {
     main {
         display: flex;
-        justify-content: flex-start;
-        /* keep items aligned to the left */
-        align-items: flex-start;
+        
         padding: 2rem;
         /* space from top and sides */
     }
